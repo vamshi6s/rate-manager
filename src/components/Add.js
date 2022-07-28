@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "../Styles/style.scss";
 
 
 const Add = () => {
@@ -14,10 +15,10 @@ const Add = () => {
         setValue(event.target.value);
       };
       return(
-        <div className='Col mb'>
+        <div className='Col mb ml-10'>
             <label>
-                    Add Rule
-                        <select value={value} onChange={handleChange}>
+                    <span className='p-10 side-font'>Add Rule</span>
+                        <select className='form-select' value={value} onChange={handleChange}>
                             {options.map((option) => (
                                 <option value={option.value}>{option.label}</option>
                             ))}

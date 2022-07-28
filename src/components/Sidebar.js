@@ -43,6 +43,12 @@ const Sidebar = ({children}) => {
           icon:<FaShoppingBag/>
           
       },
+      {
+        path:"/activity",
+        name:"Activity log",
+        icon:<FaShoppingBag/>
+        
+    },
         
     ]
    

@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Styles/style.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser,faBell,faBars } from '@fortawesome/free-solid-svg-icons';

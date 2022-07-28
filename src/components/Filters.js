@@ -16,7 +16,7 @@ const Filters = () =>{
     return(
         <div>
             <label>
-                    Add Rule
+                    <span className="p-10">Add Rule</span>
                         <select value={value} onChange={handleChange}>
                             {options.map((option) => (
                                 <option value={option.value}>{option.label}</option>
