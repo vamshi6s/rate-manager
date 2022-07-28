@@ -1,11 +1,77 @@
-import React from 'react';
 
-const Settings = () => {
+import Dropdown from '../components/dropdown';
+import Button from '../components/button';
+import InputField from '../components/inputField';
+import { Validators } from '../Utils/Validator';
+import Checkbox from '../components/Checkbox';
+
+import React, { Component } from 'react'
+
+export default class Settings extends Component {
+    state = {
+        text: '',
+        message: '',
+        country: '',
+        acceptance: false
+    };
+    handleDropdown = (country) => {
+        this.setState({country});
+    };
+    handleChange = (key) => (value) => {
+        this.setState({[key]: value});
+    };
+    handleClick = (event) => {
+        event.preventDefault();
+        alert('Button Clicked');
+    };
+    handleCheckbox = (acceptance) => {
+        this.setState({acceptance});
+    };
+  render() {
+    const {text,country,message,acceptance} = this.state;
     return (
-        <div>
-            <h1>Comment page</h1>
-        </div>
-    );
-};
+      <div>
+        <InputField
+                    value={text}
+                    type='text'
+                    placeholder='Enter text here...'
+                    validators={[
+                        {check: Validators.required, message: 'This field is required'}
+                    ]}
+                    onChange={this.handleChange('text')}/>
+        <Dropdown
+      data={[
+          {value: 1, label: 'India'},
+          {value: 2, label: 'USA'},
+          {value: 3, label: 'UK'},
+          {value: 4, label: 'Germany'},
+          {value: 5, label: 'Russia'},
+          {value: 5, label: 'Italy'},
+      ]}
+      styleClass='mt-3'
+      value={country}
+      placeholder='Select Country'
+      onChange={this.handleDropdown}
+  />
 
-export default Settings;
+   <InputField
+                    value={message}
+                    type='textarea'
+                    placeholder='Enter message!'
+                    validators={[
+                        {check: Validators.required, message: 'This field is required'}
+                    ]}
+                    onChange={this.handleChange('message')}/>
+                    <Button
+                    onClick={this.handleClick}
+                    value='Click me!'/>
+
+                    <Checkbox
+                    label='I Accept'
+                    selected={acceptance}
+                    onChange={this.handleCheckbox}
+                />
+  </div>
+    )
+  }
+}
