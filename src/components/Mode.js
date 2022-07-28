@@ -7,7 +7,7 @@ const Mode =() =>{
             <form action=''>
                     <span className=" ml-15 p-10 side-font">Mode of Changes:</span>
                     <input type="radio" id='fixedamount' name="radio"/>
-                   <label for="fixedamount" className="ml-10">Fixed Amount</label>
+                   <label for="fixedamount">Fixed Amount</label>
                   <input type="radio" id='percentage' name="radio"/>
                   <label for="percentage">Percentage</label>
                 </form>
