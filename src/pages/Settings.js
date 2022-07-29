@@ -12,6 +12,7 @@ export default class Settings extends Component {
         text: '',
         message: '',
         country: '',
+        date:'',
         acceptance: false
     };
     handleDropdown = (country) => {
@@ -28,7 +29,7 @@ export default class Settings extends Component {
         this.setState({acceptance});
     };
   render() {
-    const {text,country,message,acceptance} = this.state;
+    const {text,country,message,date,acceptance} = this.state;
     return (
       <div>
         <InputField
@@ -61,7 +62,15 @@ export default class Settings extends Component {
                     validators={[
                         {check: Validators.required, message: 'This field is required'}
                     ]}
-                    onChange={this.handleChange('message')}/>
+                    onChange={this.handleChange('date')}/>
+                    <InputField
+                    value={date}
+                    type='date'
+                    placeholder='select date'
+                    validators={[
+                        {check: Validators.required, message: 'This field is required'}
+                    ]}
+                    onChange={this.handleChange('date')}/>
                     <Button
                     onClick={this.handleClick}
                     value='Click me!'/>

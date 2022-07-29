@@ -1,4 +1,5 @@
 import React from "react";
+import "../Styles/style.scss";
 
 const Users = [
   {
@@ -98,10 +99,10 @@ class SelectTableComponent extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="cont">
         <div className="row">
-          <div className="col-md-12">
-            <table className="table1">
+          <div className="col-12">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">
@@ -113,10 +114,10 @@ class SelectTableComponent extends React.Component {
                       onChange={(e) => this.onMasterCheck(e)}
                     />
                   </th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Phone</th>
-                  <th scope="col">Website</th>
+                  <th scope="col">Tenants Details</th>
+                  <th scope="col">Storage Details</th>
+                  <th scope="col">Lease Details</th>
+                  <th scope="col">Current unit Rental price (with tax)</th>
                 </tr>
               </thead>
               <tbody>

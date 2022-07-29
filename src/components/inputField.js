@@ -32,7 +32,7 @@ const InputField = ({value, label, placeholder, validators, type, onChange}) => 
                     placeholder={placeholder}
                     onChange={handleChange}
                 />
-            )}
+            ) }
             {error && <span className='text-danger'>{error.message}</span>}
         </div>
     )

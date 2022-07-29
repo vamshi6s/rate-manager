@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
+import "../Styles/style.scss";
 
 
 export default function Flag() {
@@ -7,7 +8,7 @@ export default function Flag() {
   const onSelect = (code) => setSelect(code);
   console.log("SELECT", select);
   return (
-    <div className="App">
+    <div className="App m-10">
       <br />
 
       <ReactFlagsSelect

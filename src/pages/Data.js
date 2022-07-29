@@ -12,10 +12,10 @@ const Data = () => {
     alert(JSON.stringify(item))
   }
 
+
   return (
     <div className='row'>
       <div className='col-sm-6'>
-        <h4>Default Table</h4>
         <Table cols={tableConstants(handleEdit)} data={data} />
       </div>
 

@@ -7,10 +7,10 @@ import Mode from '../components/Mode';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Values from '../components/Values';
-import Button from '../components/button';
+import SelectTableComponent from "../components/TableData";
 
 
-export default class Occupied extends Component {
+export default class Editrule extends Component {
     handleClick = (event) => {
         event.preventDefault();
         alert('Button Clicked');
@@ -39,14 +39,14 @@ export default class Occupied extends Component {
             <div className='mb-3 p-10'>
                 <Values/>
             </div>
-            <div className='p-10 Flex just-content-center'>
-            <Button className="m-10 button"
-                    onClick={this.handleClick}
-                    value='Cancel'/>
-                <Button className="m-10 button"
-                    onClick={this.handleClick}
-                    value='Next'/>
+            
             </div>
+            <div className='p-10 Flex just-content-center'>
+            <div className="Container table1">
+      <h1>React Table</h1>
+
+      <SelectTableComponent />
+    </div>
           
         </div>
         </div>

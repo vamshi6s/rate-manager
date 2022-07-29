@@ -1,11 +1,18 @@
-import React from 'react';
-import '../App.css';
-import AddRulebutton from '../components/AddRulebutton';
+import {React,Component} from 'react';
+import "../Styles/style.scss";
+
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
+import logo from '../images/logo192.png';
+import Button from '../components/button';
+import App from '../App';
 
-
-const Dashboard = () => {
+export default class Dashboard extends Component{
+    handleClick = (event) => {
+        event.preventDefault();
+        window.location.pathname='/edit';
+    };
+    render() {
     return (
         <div>
             <Navbar/>
@@ -15,11 +22,19 @@ const Dashboard = () => {
             <Sidebar/>
             </div> 
         <div className=' bg  Flex mb'>
-          <AddRulebutton/>
+        <div className='addrule'>
+            <div className='mb'>
+            <img src={logo}/>
+            </div>
+            <div className='text-align-center'>
+            <Button className="m-10 button"
+                    onClick={this.handleClick}
+                    value='Add rule'/>
+                    </div>
+        </div>
+        
         </div>
         </div>
         </div>
-    );
+    );}
 };
-
-export default Dashboard;

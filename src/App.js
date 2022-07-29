@@ -9,6 +9,10 @@ import Settings from './pages/Settings.js';
 import Reports from './pages/Reports.js';
 import Data from './pages/Data.js';
 import TableData from './pages/TableData';
+// import Date from './pages/Datepicker';
+import Description from './pages/Description';
+import Yourrule from './pages/Yourrule';
+import Editrule from './pages/Editrule';
 
 
 
@@ -26,6 +30,10 @@ const App = () => {
           <Route path="/settings" element={<Settings />} />
           <Route path="/data" element={<Data/>}/>
           <Route path="/table" element={<TableData/>}/>
+          <Route path='/description' element={<Description/>}/>
+          {/* <Route path="/date" element={<Datepicker/>}/> */}
+          <Route path='/rule' element={<Yourrule/>}/>
+          <Route path='/edit' element={<Editrule/>}/>
         </Routes>
       
     </BrowserRouter>

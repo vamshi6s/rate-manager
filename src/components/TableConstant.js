@@ -36,7 +36,9 @@ export const tableConstants = (handleEdit) => {
     {
       title: 'Action',
       render: rowData => {
-        return <button className='btn btn-warning' onClick={handleEdit(rowData)}>Edit</button>
+        return (<div><button className='btn btn-warning' onClick={handleEdit(rowData)}>Edit</button>
+        <button className='btn btn-warning' onClick={handleEdit(rowData)}>remove</button></div>
+        )
       },
     },
   ];

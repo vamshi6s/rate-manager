@@ -23,19 +23,24 @@
   
 
 }
-.Navbar .Right{
+.Right{
+  flex:50%;
+  display: flex;
+  align-items: center;
+}
+.Middle{
   flex:50%;
   display: flex;
   align-items: center;
 }
 
-.Navbar .Left{
+.Left{
   flex:50%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.Navbar .Right .Bars{
+.Right .Bars{
   font-size: 25px;
   visibility: hidden;
 }
@@ -50,7 +55,7 @@
 .Dash{
   display: flex;
 }
-.Dash .flex{
+.Dash .cont{
   flex:90%;
   background-color: #fff; 
   box-shadow: 2px #000;
@@ -139,7 +144,7 @@ mb{
   justify-content: center;
 }
 .button{
-  width: 80px;
+  /* width: 80px; */
   height: 30px;
 }
 .app-button  {

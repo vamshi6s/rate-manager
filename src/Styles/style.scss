@@ -64,11 +64,20 @@
     margin-left:15px;
 }
 .table{
-    width: 80%;
+  width: 100%;
 }
-.table tr  td{
-    padding: 5px;
+.table thead{
+  color: $blueColor;
+}
 
+
+.table tr  td{
+    padding: 10px 20px;
+    text-align: center;
+
+}
+.text-align-center{
+  text-align: center;
 }
 .ml-10{
     margin-left:10px;
@@ -158,10 +167,34 @@
     --bs-table-active-bg: rgba(0, 0, 0, 0.1);
     --bs-table-hover-color: #212529;
     --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-    width: 500px;
     margin: auto;
     margin-bottom: 1rem;
     color: #212529;
     vertical-align: top;
     border-color: #dee2e6;
+}
+.row{
+  display: flex !important;
+  margin: 10px;
+}
+.App{
+  margin: 20px;
+}
+.m-auto{
+  margin:auto;
+}
+.block{
+  display: block;
+}
+.mt-10{
+  margin-top:10px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.col-12{
+  width:100%;
+}
+.m-10{
+  margin: 10px;
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../Styles/style.scss';
 
 
 const Button = ({value, onClick}) => (
     <button
-        className='m-10 button'
+        className='m-10 butn'
         onClick={(event) => onClick(event)}>
         {value}
     </button>
