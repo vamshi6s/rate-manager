@@ -1,17 +1,17 @@
 import {React,Component} from 'react';
 
 // import Filterlease from '../components/Filterlease';
-import Dropdown from '../components/dropdown';
-import Button from '../components/button';
-import InputField from '../components/inputField';
-import { Validators } from '../Utils/Validator';
-import "../Styles/style.scss";
-import Checkbox from '../components/Checkbox';
-import SelectTableComponent from "../components/TableData";
+import Dropdown from '../../components/dropdown';
+import Button from '../../components/button';
+import InputField from '../../components/inputField';
+import { Validators } from '../../Utils/Validator';
+import "../../Styles/style.scss";
+import Checkbox from '../../components/Checkbox';
+import SelectTableComponent from '../../components/TableData';
 
 
 
-export default class Unoccupied extends Component {
+export default class Unmappedfilter extends Component {
     state={
         
         StorageType:'',
@@ -53,7 +53,7 @@ export default class Unoccupied extends Component {
       
             <div className='m-auto'>
             <div className='block '>
-              <div className='tag'><p>Filterlease</p></div>
+              <div className='tag'><p>Filter Out Unmapped leases</p></div>
             <div className='Cont1 m-auto border-radius-t-0 '>
                 <div className='block'>
                 <div className='row'>
@@ -210,8 +210,8 @@ export default class Unoccupied extends Component {
   
   
                 </div>
-                <div className='flex'>
-    <div className='  row'>
+                <div className='flex justify-cont-space-even mt-20'>
+    <div>
     <Checkbox
                     label='Include scheduled Move out tenants'
                     selected={acceptance}
@@ -219,6 +219,14 @@ export default class Unoccupied extends Component {
                 />
 
 
+  </div>
+  <div>
+  <Button className=" button"
+  onClick={this.handleClick}
+  value='Update last price change'/>
+  <Button className=" button"
+  onClick={this.handleClick}
+  value='Map rules'/>
   </div>
   </div>
   

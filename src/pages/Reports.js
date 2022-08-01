@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo192.png';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
+
 import DynamicSelect from '../components/DynamicSelect';
 
 
@@ -40,13 +38,6 @@ const arrayOfData = [
     render() {
       return (
 
-        <div>
-            <Navbar/>
-        
-        <div className='Dash'>
-            <div>
-            <Sidebar/>
-            </div> 
         <div className="App">
           <header className="App-header">
             <p className="App-title">Dynamic Select</p>
@@ -55,8 +46,7 @@ const arrayOfData = [
             <DynamicSelect arrayOfData={arrayOfData} onSelectChange={this.handleSelectChange} /> <br /><br />
           </p>
         </div>
-        </div>
-        </div>
+
       );
     }
   }

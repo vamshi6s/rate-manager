@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-const Table = ({ cols, data }) => {
+const Table = ({ cols, data,className }) => {
     return (
-        <div class="table-responsive">
-            <table className={`table `}>
+        <div>
+            <table className={className}>
                 <thead>
                     <tr>
                         {cols.map((headerItem, index) => (

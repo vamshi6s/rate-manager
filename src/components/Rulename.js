@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/style.scss";
 
+
 const Rulename = () => {
     return(
         <div className="d-inline-block ml-10">

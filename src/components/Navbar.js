@@ -3,6 +3,7 @@ import "../Styles/style.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser,faBell,faBars } from '@fortawesome/free-solid-svg-icons';
+import '../Styles/style.scss';
 
 import Flag from './Flag';
 
@@ -20,7 +21,7 @@ const Navbar = ()=>{
         
         <div className="Left">
         <div className="link1 link_text" ><FontAwesomeIcon icon={faBell} /></div>
-        <span style={{width:"150px",position:"inherit",top:"-14px",margin:"0px 14px 0px 0px"}} className="flag">
+        <span className="flag">
         <Flag />
        </span>
        <div className='user' >

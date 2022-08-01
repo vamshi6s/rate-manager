@@ -1,6 +1,5 @@
 import {React,Component} from 'react';
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+
 // import Filterlease from '../components/Filterlease';
 import Button from '../components/button';
 import Data from './Data';
@@ -26,18 +25,16 @@ export default class Yourrule extends Component {
         event.preventDefault();
         alert('Button Clicked');
     };
+    handleClic = (event) => {
+        event.preventDefault();
+        window.location.href="/unmapped";
+    };
     
 
     render(){ 
         const {text} = this.state;
     return (
-        <div>
-            <Navbar/>
-        
-        <div className='bg Dash'>
-            <div>
-            <Sidebar/>
-            </div>
+    
             <div className='m-auto'>
             <div className='block'>
             
@@ -55,19 +52,18 @@ export default class Yourrule extends Component {
                     </div>
                     <div className='Left'>
                     <Button className="m-10 button"
-                    onClick={this.handleClick}
+                    onClick={this.handleClic}
                     value='Add New Rules'/>
                     <Button className="m-10 button"
-                    onClick={this.handleClick}
+                    onClick={this.handleClic}
                     value='View Unmapped Leases'/>
                     </div>
   </div>
   
   
                 
-                <div className='cont'>
-                <div className='flex'>
-    <div className='  row'>
+                <div className='Cont'>
+
     <Data/>
     
     
@@ -76,10 +72,7 @@ export default class Yourrule extends Component {
   </div>
   </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
+
      
     
         

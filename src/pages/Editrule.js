@@ -4,8 +4,6 @@ import '../Styles/style.scss'
 import Add from '../components/Add';
 import Rulename from '../components/Rulename';
 import Mode from '../components/Mode';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
 import Values from '../components/Values';
 import SelectTableComponent from "../components/TableData";
 
@@ -17,13 +15,6 @@ export default class Editrule extends Component {
     };
     render() {
     return (
-        <div>
-            <Navbar/>
-        
-        <div className='Dash'>
-            <div>
-            <Sidebar/>
-            </div> 
             <div className='bg'>
         <div className='cont box'>
             <h4 className='h4 p-10 font-title'>Add Rule</h4>
@@ -48,8 +39,6 @@ export default class Editrule extends Component {
       <SelectTableComponent />
     </div>
           
-        </div>
-        </div>
         </div>
         </div>
     );}

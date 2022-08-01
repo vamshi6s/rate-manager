@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+import "../Styles/style.scss";
 
 import {validateInput} from '../Utils/Validator.js';
 
@@ -13,12 +14,11 @@ const InputField = ({value, label, placeholder, validators, type, onChange}) => 
     };
 
     return (
-        <div className="form-group">
+        <div>
             {label && <label htmlFor="app-input-field">{label}</label>}
 
             {type === 'textarea' ? (
                 <textarea
-                    className='form-control'
                     placeholder={placeholder}
                     value={value}
                     defaultValue={value}
@@ -27,8 +27,8 @@ const InputField = ({value, label, placeholder, validators, type, onChange}) => 
             ) : (
                 <input
                     type={type}
+                    className='inpt'
                     value={value}
-                    className='form-control'
                     placeholder={placeholder}
                     onChange={handleChange}
                 />

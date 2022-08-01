@@ -3,7 +3,7 @@ import ReactFlagsSelect from "react-flags-select";
 import "../Styles/style.scss";
 
 
-export default function Flag() {
+const Flag = () =>{
   const [select, setSelect] = useState("SE");
   const onSelect = (code) => setSelect(code);
   console.log("SELECT", select);
@@ -32,3 +32,5 @@ export default function Flag() {
     </div>
   );
 }
+
+export default Flag;

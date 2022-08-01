@@ -99,10 +99,9 @@ class SelectTableComponent extends React.Component {
 
   render() {
     return (
-      <div className="cont">
+      <div className="Cont">
         <div className="row">
-          <div className="col-12">
-            <table className="table">
+            <table className="fixTableHead">
               <thead>
                 <tr>
                   <th scope="col">
@@ -140,16 +139,9 @@ class SelectTableComponent extends React.Component {
                 ))}
               </tbody>
             </table>
-            <button
-              className="btn btn-primary"
-              onClick={() => this.getSelectedRows()}
-            >
-              Get Selected Items {this.state.SelectedList.length} 
-            </button>
             
           </div>
         </div>
-      </div>
     );
   }
 }

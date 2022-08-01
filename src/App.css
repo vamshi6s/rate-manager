@@ -9,7 +9,7 @@
   padding: 20px;
 } */
 .sidebar{
-  background: rgb(1, 1, 26);
+  background: #293462;
   color: #fff;
   height: 100vh;
   width: 200px;
@@ -49,14 +49,14 @@
   font-size: 30px;
 }
 .bg{
-  flex:90%;
+
   background-color: rgba(203, 223, 240, 0.493);
 }
 .Dash{
   display: flex;
 }
 .Dash .cont{
-  flex:90%;
+
   background-color: #fff; 
   box-shadow: 2px #000;
   padding: 10px;
@@ -159,6 +159,9 @@ mb{
 .app-button:hover {
   background: brown;
 }
+.table.ml-15 tbody tr td {
+  padding: 3px;
+}
 .m-10{
   margin: 10px;
 }
@@ -169,4 +172,57 @@ mb{
   .sidebar{
     margin-left: -200px;
   }
+}
+
+/*selected table*/
+.fixTableHead {
+	overflow-y: auto;
+	height: 110px;
+	}
+	.fixTableHead thead th {
+	/* position: sticky; */
+	top: 0;
+	}
+	table {
+	border-collapse: collapse;		
+	width: 100%;
+	}
+	.fixTableHead th,
+	.fixTableHead td {
+	padding:18px;
+
+	}
+.fixTableHead thead{
+  border-bottom:  1px solid rgba(50, 50, 93, 0.25);
+  color: #62b6ea;
+}
+.fixTableHead tbody tr td{
+ text-align: center;
+}
+
+/*common table*/
+
+.commontable {
+	overflow-y: auto;
+	height: 110px;
+	}
+	.commontable thead th {
+	/* position: sticky; */
+	top: 0;
+	}
+	table {
+	border-collapse: collapse;		
+	width: 100%;
+	}
+	.commontable th,
+  .commontable td {
+	padding:18px;
+
+	}
+.commontable thead{
+  border-bottom:  1px solid rgba(50, 50, 93, 0.25);
+  color: #62b6ea;
+}
+.commontable tbody tr td{
+ text-align: center;
 }
