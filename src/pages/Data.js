@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Table from '../components/Table';
-import { data } from '../components/Mockdata';
+import { data } from '../components/data/Mockdata';
 import { tableConstants } from '../components/TableConstant';
 
 

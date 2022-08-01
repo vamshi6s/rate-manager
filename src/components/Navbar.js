@@ -4,8 +4,7 @@ import "../Styles/style.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser,faBell,faBars } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/style.scss';
-
-import Flag from './Flag';
+import Flag from './flag/Flag';
 
 const Navbar = ()=>{
     return(

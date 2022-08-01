@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import "../Styles/style.scss";
+import '../../Styles/style.scss';
 
-import {validateInput} from '../Utils/Validator.js';
+import {validateInput} from '../../Utils/Validator.js';
 
-const InputField = ({value, label, placeholder, validators, type, onChange}) => {
+const InputField = ({value, label, placeholder, validators, type, onChange,className}) => {
     const [error, setError] = useState(false);
 
     const handleChange = (event) => {
@@ -19,6 +19,7 @@ const InputField = ({value, label, placeholder, validators, type, onChange}) => 
 
             {type === 'textarea' ? (
                 <textarea
+                className={className}
                     placeholder={placeholder}
                     value={value}
                     defaultValue={value}
@@ -27,7 +28,7 @@ const InputField = ({value, label, placeholder, validators, type, onChange}) => 
             ) : (
                 <input
                     type={type}
-                    className='inpt'
+                    className={className}
                     value={value}
                     placeholder={placeholder}
                     onChange={handleChange}

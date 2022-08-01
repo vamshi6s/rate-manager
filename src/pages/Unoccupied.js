@@ -1,12 +1,12 @@
 import {React,Component} from 'react';
 
 // import Filterlease from '../components/Filterlease';
-import Dropdown from '../components/dropdown';
-import Button from '../components/button';
-import InputField from '../components/inputField';
+import Dropdown from '../components/dropdown/dropdown';
+import Button from '../components/button/button';
+import InputField from '../components/inputfield/inputField';
 import { Validators } from '../Utils/Validator';
 import "../Styles/style.scss";
-import Checkbox from '../components/Checkbox';
+import Checkbox from '../components/checkbox/Checkbox';
 import SelectTableComponent from "../components/TableData";
 
 

@@ -1,0 +1,13 @@
+/*button*/
+$buttondanger:#d43f3a;
+$buttonback-danger:#d9534f;
+.buttn{
+    padding: 8px 20px ;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.buttn-danger{
+    border: $buttondanger;
+    background-color: $buttonback-danger;
+}

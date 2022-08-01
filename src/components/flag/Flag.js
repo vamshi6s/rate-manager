@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
-import "../Styles/style.scss";
+import '../../Styles/style.scss';
 
 
 const Flag = () =>{

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import "../Styles/style.scss";
 import logo from '../images/logo192.png';
-import Button from '../components/button';
+import Button from '../components/button/button';
 
 
 export default class Occupied extends Component {
     handleClick = (event) => {
         event.preventDefault();
-        window.location.pathname='/Addrule';
+        window.location.pathname='/ruledescription';
     };
   render() {
     return (

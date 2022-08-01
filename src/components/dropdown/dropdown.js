@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "../Styles/style.scss";
+import '../../Styles/style.scss';
 
 const Dropdown = ({value, data, placeholder, styleClass, onChange}) => {
 

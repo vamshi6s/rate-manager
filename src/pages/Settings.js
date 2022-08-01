@@ -1,9 +1,9 @@
 
-import Dropdown from '../components/dropdown';
-import Button from '../components/button';
-import InputField from '../components/inputField';
+import Dropdown from '../components/dropdown/dropdown';
+import Button from '../components/button/button';
+import InputField from '../components/inputfield/inputField';
 import { Validators } from '../Utils/Validator';
-import Checkbox from '../components/Checkbox';
+import Checkbox from '../components/checkbox/Checkbox';
 
 import React, { Component } from 'react'
 
@@ -62,7 +62,7 @@ export default class Settings extends Component {
                     validators={[
                         {check: Validators.required, message: 'This field is required'}
                     ]}
-                    onChange={this.handleChange('date')}/>
+                    onChange={this.handleChange('message')}/>
                     <InputField
                     value={date}
                     type='date'

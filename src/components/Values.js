@@ -1,9 +1,9 @@
 import {React,Component} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash,faSquarePlus } from '@fortawesome/free-solid-svg-icons';
-import Dropdown from "./dropdown";
+import Dropdown from "./dropdown/dropdown";
 import { Validators } from "../Utils/Validator";
-import InputField from "./inputField";
+import InputField from "./inputfield/inputField";
 import '../Styles/style.scss';
 
 
@@ -25,7 +25,8 @@ export default class Values extends Component {
     render(){
     const {country,text}=this.state;
     return(
-        <div className="table ml-15"><table >
+        <div className="table-responsive ml-15">
+            <table >
         <tbody>
             <tr>
                 <td>

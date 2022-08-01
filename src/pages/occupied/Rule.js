@@ -1,47 +1,35 @@
 import {React,Component} from 'react';
 
 // import Filterlease from '../components/Filterlease';
-import Button from '../components/button/button';
-import Data from './Data';
-import InputField from '../components/inputfield/inputField';
+import Button from '../../components/button/button';
+import InputField from '../../components/inputfield/inputField';
+import SelectTableComponent from '../../components/TableData';
 
-import "../Styles/style.scss";
-
-
-
-export default class Yourrule extends Component {
+export default class Rule extends Component{
     state={
         
         text:'',
         
         
     }
-    
-    
     handleChange = (key) => (value) => {
         this.setState({[key]: value});
     };
-    handleClick = (event) => {
+    handleClic = (event) => {
         event.preventDefault();
         alert('Button Clicked');
     };
-    handleClic = (event) => {
-        event.preventDefault();
-        window.location.href="/unmapped";
-    };
-    
-
-    render(){ 
-        const {text} = this.state;
-    return (
-    
-            <div className='m-auto'>
+    render(){
+        const{text}=this.state
+        return(
+            <section>
+                    <div className='m-auto'>
             <div className='block'>
             
                 
                 <div className='row'>
                      <div className='Right ml-6'>
-                <h4>Your Rules</h4>
+                <h4>Rule</h4>
                 </div>
                 <div className='Middle'>
                 <InputField
@@ -53,18 +41,15 @@ export default class Yourrule extends Component {
                     <div className='Left mr-6'>
                     <Button className="m-10 button"
                     onClick={this.handleClic}
-                    value='Add New Rules'/>
-                    <Button className="m-10 button"
-                    onClick={this.handleClic}
-                    value='View Unmapped Leases'/>
+                    value='Change Rule'/>
                     </div>
   </div>
   
   
                 
-                <div className='Cont'>
+                <div >
 
-    <Data/>
+                <SelectTableComponent className="fixTableHead" />
     
     
 
@@ -72,12 +57,7 @@ export default class Yourrule extends Component {
   </div>
   </div>
   </div>
-
-     
-    
-        
-    
-        
-    );}
-
+  </section>
+        )
+    }
 };

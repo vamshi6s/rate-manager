@@ -1,4 +1,4 @@
-import InputField from '../components/inputField';
+import InputField from '../components/inputfield/inputField';
 import { Validators } from '../Utils/Validator';
 import {React,Component}  from 'react';
 

@@ -16,6 +16,8 @@ import Editrule from './pages/Editrule';
 import Navbar from './components/Navbar';
 import Addrule from './pages/occupied/Addrule';
 import Unmappedfilter from './pages/occupied/Unmappedfilters';
+import Rule from './pages/occupied/Rule';
+import Ruledescription from './pages/occupied/Rulename';
 
 
 
@@ -47,6 +49,8 @@ const App = () => {
           <Route path="/addrule" element={<Addrule/>}/>
           <Route path="/unoccupied" element={<Unoccupied />} />
           <Route path='/unmapped' element={<Unmappedfilter/>}/>
+          <Route path='/ruletype' element={<Rule/>}/>
+          <Route path='/ruledescription' element={<Ruledescription/>}/>
           <Route path='/reports' element={<Reports/>}/>
           <Route path="/settings" element={<Settings />} />
           <Route path="/data" element={<Data/>}/>

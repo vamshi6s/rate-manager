@@ -1,23 +1,28 @@
+// 
 import React, { Component } from 'react';
-import '../App.css';
 import '../Styles/style.scss'
 import Add from '../components/Add';
 import Rulename from '../components/Rulename';
 import Mode from '../components/Mode';
 import Values from '../components/Values';
-import SelectTableComponent from "../components/TableData";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
+import SelectTableComponent from '../components/TableData';
 
-
-export default class Editrule extends Component {
+export default class Addrule extends Component {
     handleClick = (event) => {
         event.preventDefault();
-        alert('Button Clicked');
+        window.location.href="/unoccupied";
     };
+    handleCl = (event) => {
+        event.preventDefault();
+        alert("button clicked");
+    }
     render() {
     return (
-            <div className='bg'>
-        <div className='cont box'>
-            <h4 className='h4 p-10 font-title'>Add Rule</h4>
+             <section>
+        <div className='Cont box '>
+            <h4 className='h4 p-10px font-title'>Edit Rule</h4>
             <div className='md-3 p-10'>
                 <Add/>
             </div>
@@ -30,17 +35,23 @@ export default class Editrule extends Component {
             <div className='mb-3 p-10'>
                 <Values/>
             </div>
-            
+            <div className='mt-10 mb-4'>
+            <a href="https://github.com/" onClick={this.handleCl}><FontAwesomeIcon icon= {faSquarePlus}/>Add Rule</a> 
             </div>
-            <div className='p-10 Flex just-content-center'>
-            <div className="Container table1">
-      <h1>React Table</h1>
-
-      <SelectTableComponent />
-    </div>
+            
           
         </div>
-        </div>
+        <div >
+
+                <SelectTableComponent className="fixTableHead" />
+    
+    
+
+
+  </div>
+        </section>
+        
+    
     );}
 
 };

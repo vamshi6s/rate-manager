@@ -1,13 +1,15 @@
 import {React,Component} from 'react';
 
+
 // import Filterlease from '../components/Filterlease';
-import Dropdown from '../../components/dropdown';
-import Button from '../../components/button';
-import InputField from '../../components/inputField';
+import Dropdown from '../../components/dropdown/dropdown';
+import Button from '../../components/button/button';
+import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
 import "../../Styles/style.scss";
-import Checkbox from '../../components/Checkbox';
+import Checkbox from '../../components/checkbox/Checkbox';
 import SelectTableComponent from '../../components/TableData';
+// import Modal from '../../components/Modal';
 
 
 
@@ -21,10 +23,18 @@ export default class Unmappedfilter extends Component {
         filter:'',
         amenity:'',
         date:'',
-        acceptance: false
+        acceptance: false,
 
         
     }
+    // openModal=(event)=>{
+    //   event.preventDefault();
+      
+    // }
+    // handleModal(){  
+    //   this.setState({show:!this.state.show})  
+    // }
+  
     
     handleDropdown = (location,StorageType,building,unittype,filter) => {
         this.setState({location,StorageType,building,unittype,filter});
@@ -40,11 +50,13 @@ export default class Unmappedfilter extends Component {
     };
     handleClick = (event) => {
       event.preventDefault();
-      alert('Button Clicked');
+      window.location.pathname="/ruletype"
   };
     handleCheckbox = (acceptance) => {
         this.setState({acceptance});
     };
+    
+
     
 
     render(){ 
@@ -95,7 +107,7 @@ export default class Unmappedfilter extends Component {
   /></div>
   <div className="m-10">
           <header className="App-header">
-            <p className="App-title">Buiding </p>
+            <p className="App-title">Building </p>
           </header>
             <Dropdown
       data={[
@@ -108,7 +120,7 @@ export default class Unmappedfilter extends Component {
       ]}
       styleClass='mt-3'
       value={building}
-      placeholder='Select bulding'
+      placeholder='Select building'
       onChange={this.handleDropdown}
   /></div>
   <div className="m-10">
@@ -220,9 +232,10 @@ export default class Unmappedfilter extends Component {
 
 
   </div>
-  <div>
+  <div className='mr-10'>
+
   <Button className=" button"
-  onClick={this.handleClick}
+onClick={this.handleClick}
   value='Update last price change'/>
   <Button className=" button"
   onClick={this.handleClick}
@@ -243,17 +256,10 @@ export default class Unmappedfilter extends Component {
             </div>
             </div>
   </div>
-  
-            
-                 
-                
-                
-
-  
-    
-        
-    
-        
     );}
 
 };
+
+
+
+

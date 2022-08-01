@@ -5,7 +5,7 @@ import Add from '../../components/Add';
 import Rulename from '../../components/Rulename';
 import Mode from '../../components/Mode';
 import Values from '../../components/Values';
-import Button from '../../components/button';
+import Button from '../../components/button/button';
 
 
 export default class Addrule extends Component {
