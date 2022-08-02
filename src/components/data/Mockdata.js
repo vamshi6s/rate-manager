@@ -5,6 +5,7 @@ export const data = [
       "rulename": "Rule 1",
       "rulecondition": "Sincere@april.biz",
       "numberofimpactingleases": "5",
+      "gmail":'bnfg@',
     },
     {
       "Date": 2,

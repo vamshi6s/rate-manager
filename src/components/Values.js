@@ -5,6 +5,7 @@ import Dropdown from "./dropdown/dropdown";
 import { Validators } from "../Utils/Validator";
 import InputField from "./inputfield/inputField";
 import '../Styles/style.scss';
+import '../components/button/button.scss';
 
 
 export default class Values extends Component {
@@ -80,9 +81,9 @@ export default class Values extends Component {
       </div>
                 </td>
                 <td>
-                    <a href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon={faTrash} /></a></td>
+                    <a className="text-danger font-size-18 pl-20px pr-10px " href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon={faTrash} /></a></td>
                     <td>
-                    <a href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon= {faSquarePlus}/></a>
+                    <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon= {faSquarePlus}/></a>
                 </td>
             </tr>
         </tbody>

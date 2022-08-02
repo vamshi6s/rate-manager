@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import SelectTableComponent from '../components/TableData';
 
-export default class Addrule extends Component {
+export default class Editrule extends Component {
     handleClick = (event) => {
         event.preventDefault();
         window.location.href="/unoccupied";

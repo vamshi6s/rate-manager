@@ -6,12 +6,13 @@ import Rulename from '../../components/Rulename';
 import Mode from '../../components/Mode';
 import Values from '../../components/Values';
 import Button from '../../components/button/button';
+import '../../components/button/button.scss';
 
 
 export default class Addrule extends Component {
     handleClick = (event) => {
         event.preventDefault();
-        window.location.href="/unoccupied";
+        window.location.pathname="/filterleases";
     };
     handleCl = (event) => {
         event.preventDefault();
@@ -35,10 +36,10 @@ export default class Addrule extends Component {
                 <Values/>
             </div>
             <div className='p-10 Flex just-content-center'>
-            <Button className="m-10 button"
+            <Button className="buttn buttn-danger text-white"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="m-10 button"
+                <Button className="buttn buttn-next text-white"
                     onClick={this.handleClick}
                     value='Next'/>
             </div>

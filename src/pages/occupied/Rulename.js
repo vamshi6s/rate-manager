@@ -55,10 +55,10 @@ export default class Ruledescription extends Component {
                     onChange={this.handleChange('message')}/>
             </div>
             <div className='p-10 Flex just-content-center'>
-            <Button className="buttn buttn-danger"
+            <Button className="buttn buttn-danger text-white"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="m-10 button"
+                <Button className="buttn buttn-next text-white "
                     onClick={this.handleClick}
                     value='Next'/>
             </div>

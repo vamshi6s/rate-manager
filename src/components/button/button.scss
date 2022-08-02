@@ -1,13 +1,79 @@
 /*button*/
 $buttondanger:#d43f3a;
 $buttonback-danger:#d9534f;
+$buttonsuccess:#34c28d;
+$whitecolor:#fff;
+$buttonnext:#01AFDF;
+$button-save:#5cb85c;
+$button-edit:#9CB4CC;
+$blue:#2f80f8;
+
 .buttn{
-    padding: 8px 20px ;
+    padding: 8px 23px ;
     border-radius: 5px;
     cursor: pointer;
+    height: 30px;
+    margin:  10px;
 
+
+}
+.button-icon{
+    padding: 2px 6px;
+    cursor: pointer;
+    height: 30px;
+    margin:  10px;
+}
+.text-danger{
+    color: $buttondanger;
+}
+.text-pri{
+    color: $buttonnext;
+}
+.text-white{
+    color: $whitecolor;
 }
 .buttn-danger{
     border: $buttondanger;
     background-color: $buttonback-danger;
+}
+.buttn-next{
+    background-color:$buttonnext;
+    border: $buttonnext;
+}
+.button-save{
+    background-color:$button-save ;
+    border:$button-save;
+}
+.buttn-edit{
+    background-color: $button-edit;
+    border: $button-edit;
+}
+.button-blue{
+    background-color: $blue;
+    border: $blue;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.pl-20px{
+    padding-left: 20px;
+}
+.pl-5px{
+    padding-left: 5px;
+}
+.pr-10px{
+    padding-right: 10px;
+}
+.butn-search{
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: $whitecolor;
+
+}
+.border-pri{
+    border: 1px solid $buttonnext;
 }

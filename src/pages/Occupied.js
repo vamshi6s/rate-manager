@@ -16,9 +16,9 @@ export default class Occupied extends Component {
         <img className='block m-auto' src={logo}/>
         </div>
         <div className='text-align-center'>
-        <Button className="m-10 button"
+        <Button className="buttn button-blue text-white"
                 onClick={this.handleClick}
-                value='Add rule'/>
+                value=' Add New rule '/>
                 </div>
                 </section>
     )
