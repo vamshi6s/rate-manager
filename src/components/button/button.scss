@@ -1,14 +1,16 @@
 /*button*/
-$buttondanger:#d43f3a;
-$buttonback-danger:#d9534f;
-$buttonsuccess:#34c28d;
-$whitecolor:#fff;
-$buttonnext:#01AFDF;
-$button-save:#5cb85c;
-$button-edit:#9CB4CC;
-$blue:#2f80f8;
+$button-danger:#FE6363;
+$buttonback-danger:#FE6363;
+$button-success:#34c28d;
+$white-color:#fff;
+$button-next:#009EF7;
+$font-color: #009EF7;
+$button-save:#52B441;
+$button-edit:#A7B8D6;
+$button-remove:#FF5771;
+$blue-color:#1F86EF;
 
-.buttn{
+.button{
     padding: 8px 23px ;
     border-radius: 5px;
     cursor: pointer;
@@ -24,33 +26,37 @@ $blue:#2f80f8;
     margin:  10px;
 }
 .text-danger{
-    color: $buttondanger;
+    color: $button-danger;
 }
 .text-pri{
-    color: $buttonnext;
+    color: $button-next;
 }
 .text-white{
-    color: $whitecolor;
+    color: $white-color;
 }
-.buttn-danger{
-    border: $buttondanger;
+.button-danger{
+    border: $button-danger;
     background-color: $buttonback-danger;
 }
-.buttn-next{
-    background-color:$buttonnext;
-    border: $buttonnext;
+.button-next{
+    background-color:$button-next;
+    border: $button-next;
 }
 .button-save{
     background-color:$button-save ;
     border:$button-save;
 }
-.buttn-edit{
+.button-edit{
     background-color: $button-edit;
     border: $button-edit;
 }
+.button-remove{
+    background-color: $button-remove;
+    border: $button-remove;
+}
 .button-blue{
-    background-color: $blue;
-    border: $blue;
+    background-color:$blue-color;
+    border:$blue-color;
 }
 .font-size-18{
     font-size: 18px;
@@ -67,13 +73,13 @@ $blue:#2f80f8;
 .pr-10px{
     padding-right: 10px;
 }
-.butn-search{
+.button-search{
     width: 150px;
     border-radius: 5px;
     height: 30px;
-    background-color: $whitecolor;
+    background-color: $white-color;
 
 }
 .border-pri{
-    border: 1px solid $buttonnext;
+    border: 1px solid $button-next;
 }

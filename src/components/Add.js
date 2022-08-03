@@ -17,7 +17,7 @@ const Add = () => {
       return(
         <div className='Col mb ml-10'>
             <label>
-                    <span className='p-10 side-font'>Add Rule</span>
+                    <span className='pr-25px side-font'>Add Rule</span>
                         <select className='form-select' value={value} onChange={handleChange}>
                             {options.map((option) => (
                                 <option value={option.value}>{option.label}</option>

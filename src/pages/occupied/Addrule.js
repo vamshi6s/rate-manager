@@ -20,26 +20,26 @@ export default class Addrule extends Component {
     }
     render() {
     return (
-             <section>
+             <section className='mt-50px'>
         <div className='Cont box '>
-            <h4 className='h4 p-10px font-title'>Add Rule</h4>
-            <div className='md-3 p-10'>
+            <h4 className='h4 p-15px font-title text-blue'>Add Rule</h4>
+            <div className='md-3 p-15px'>
                 <Add/>
             </div>
-            <div className='mb-3 p-10'>
+            <div className='mb-3 p-15px'>
                 <Rulename/>
             </div>
-            <div className='mb-3 p-10'>
+            <div className='mb-3 pt-20px pb-20px pl-40px'>
                 <Mode/>
             </div>
-            <div className='mb-3 p-10'>
+            <div className='mb-3 pt-20px pb-20px pl-40px'>
                 <Values/>
             </div>
-            <div className='p-10 Flex just-content-center'>
-            <Button className="buttn buttn-danger text-white"
+            <div className='p-10 flex just-content-center'>
+            <Button className="button button-danger text-white"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="buttn buttn-next text-white"
+                <Button className="button button-next text-white"
                     onClick={this.handleClick}
                     value='Next'/>
             </div>

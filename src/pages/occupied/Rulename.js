@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import '../../Styles/style.scss';
+import '../../Styles/style.css';
 import '../../components/button/button.scss'
 import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
@@ -26,13 +26,13 @@ export default class Ruledescription extends Component {
     render() {
         const {text,message}=this.state;
     return (
-             <section>
+             <section className='mt-50px'>
         <div className='Cont box '>
-            <h4 className='h4 p-10px font-title'>Add Rule</h4>
-            <div className='md-3 pl-4 pt-2 pb-2'>
+            <h4 className='h4 p-15px font-title text-blue '>Add Rule</h4>
+            <div className='md-3 pl-15px pt-6px pb-5px'>
                 <h4>RuleName</h4>
             </div>
-            <div className='mb-3 pl-4 pb-2'>
+            <div className='mb-3 pl-15px pt-6px pb-5px'>
             <InputField 
             className='form-select'
                     value={text}
@@ -40,10 +40,10 @@ export default class Ruledescription extends Component {
                     placeholder=''
                     onChange={this.handleChange('text')}/>
             </div>
-            <div className='mb-3 pl-4  pb-2'>
+            <div className='mb-3 pl-15px pt-6px pb-5px'>
                 <h4>Rule Description</h4>
             </div>
-            <div className='mb-3 pl-4 pb-2'>
+            <div className='mb-3 pl-15px pt-6px pb-5px'>
             <InputField
             className='text-area'
                     value={message}
@@ -54,11 +54,11 @@ export default class Ruledescription extends Component {
                     ]}
                     onChange={this.handleChange('message')}/>
             </div>
-            <div className='p-10 Flex just-content-center'>
-            <Button className="buttn buttn-danger text-white"
+            <div className='p-10 flex just-content-center'>
+            <Button className="button button-danger text-white"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="buttn buttn-next text-white "
+                <Button className="button button-next text-white "
                     onClick={this.handleClick}
                     value='Next'/>
             </div>

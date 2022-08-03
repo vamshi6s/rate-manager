@@ -1,9 +1,9 @@
 import {React,Component} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash,faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from "./dropdown/dropdown";
 import { Validators } from "../Utils/Validator";
 import InputField from "./inputfield/inputField";
+import  cancel from '../images/cancel.svg';
+import Add from '../images/Add.svg';
 import '../Styles/style.scss';
 import '../components/button/button.scss';
 
@@ -46,9 +46,9 @@ export default class Values extends Component {
       onChange={this.handleDropdown}
   />
                 </td>
-                <td>Rental price by</td>
+                <td><p className="ml-6px mr-6px">Rental price by</p></td>
                 <td>
-                    <div>
+                    <div className="ml-6px">
                 <InputField
                     value={text}
                     type='text'
@@ -62,10 +62,10 @@ export default class Values extends Component {
                 
                 </td>
                 <td>
-                    When price has not changed in 
+                    <p className="ml-6px ml-6px">When price has not changed in</p>
                 </td>
                 <td>
-                <div class="inpt-group">
+                <div class="inpt-group ml-10px">
                 <InputField
                     value={text}
                     type='text'
@@ -81,9 +81,9 @@ export default class Values extends Component {
       </div>
                 </td>
                 <td>
-                    <a className="text-danger font-size-18 pl-20px pr-10px " href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon={faTrash} /></a></td>
+                    <a className="text-danger font-size-18 pl-20px pr-10px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
                     <td>
-                    <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleClick}><FontAwesomeIcon icon= {faSquarePlus}/></a>
+                    <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
                 </td>
             </tr>
         </tbody>

@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   text-decoration: none;
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
 }
 
 /* main{
@@ -13,7 +13,7 @@
   background: #112B3C;
   color: #fff;
   height: 100vh;
-  width: 200px;
+  width: 180px;
   transition: all 0.5s;
 }
 .Navbar{
@@ -51,24 +51,7 @@
 }
 .bg{
 
-  background-color: rgba(203, 223, 240, 0.493);
-}
-.Dash{
-  display: flex;
-}
-.Dash .cont{
-
-  background-color: #fff; 
-  box-shadow: 2px #000;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 6px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
-
-}
-.Flex{
-  display: flex;
+  background-color: #F2F7FB ;
 }
 
 
@@ -87,37 +70,27 @@
   font-size: 25px;
   margin-left: 50px;
 }
-.link1{
-  display: flex;
-  color:black;
-  padding: 10px 15px;
-  gap: 15px;
-  transition: all 0.5s;
-
-}
 .link{
   display: flex;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 25px;
   gap: 15px;
   transition: all 0.5s;
 }
-.link1:hover{
-  background:lightskyblue;
-  color: #000;
-  transition: all 0.5s;
-}
+
 .link_text{
   display: block;
 }
 .link:hover{
-  background:lightskyblue;
-  color: #000;
+  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, var(--unnamed-color-1d2e38) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, #1D2E38 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
   transition: all 0.5s;
 }
 .active{
-  background: lightskyblue;
-  color: #000;
+  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, var(--unnamed-color-1d2e38) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, #1D2E38 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 .icon, .link_text{
   font-size: 16px;
@@ -134,13 +107,10 @@ mb{
   margin:auto;
 }
 .h4{
-    color: #62b6ea;
     border-bottom: 1px solid lightgrey;
     padding-bottom: 5px;
 }
-.p-10{
-  padding: 10px 10px 10px 0;
-}
+
 .just-content-center{
   justify-content: center;
 }
@@ -192,8 +162,8 @@ mb{
 
 	}
 .fixTableHead thead{
-  border-bottom:  1px solid rgba(50, 50, 93, 0.25);
-  color: #62b6ea;
+  border-bottom:  1px solid rgba(50, 50, 93, 0.1);
+  color: #1F86EF;
 }
 .fixTableHead tbody tr td{
  text-align: center;
@@ -219,7 +189,7 @@ mb{
 	}
 .commontable thead{
   border-bottom:  1px solid rgba(50, 50, 93, 0.25);
-  color: #62b6ea;
+  color: #1F86EF;
 }
 .commontable tbody tr td{
  text-align: center;
@@ -296,4 +266,8 @@ mb{
 
 #cancelBtn {
   background-color: crimson;
+}
+.scroll-y{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }

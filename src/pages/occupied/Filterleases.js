@@ -7,7 +7,8 @@ import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
 import '../../Styles/style.scss';
 import Checkbox from '../../components/checkbox/Checkbox';
-import SelectTableComponent from "../../components/TableData";
+import SelectTableComponent from '../../components/tables/TableData';
+import filterimg from '../../images/filterr.png';
 
 
 
@@ -52,14 +53,14 @@ export default class Filterleases extends Component {
     render(){ 
         const {location,StorageType,building,unittype,filter,amenity,date,acceptance} = this.state;
     return (
-      
-            <div className='m-auto'>
+      <section className='mt-30px'>
+            <div className='m-auto '>
             <div className='block '>
-              <div className='tag'><p>Filterlease</p></div>
+              <div className='tag'><p><img className='w-15px' src={filterimg}/>  Filter Out leases add to rule1</p></div>
             <div className='Cont1 m-auto border-radius-t-0 '>
             <div className='row flex-wrap justify-cont-space-evenly'>
-            <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+            <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">Storage Type</p>
           </header>
             <Dropdown
@@ -76,8 +77,8 @@ export default class Filterleases extends Component {
       placeholder='Select Storage Type'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">Location</p>
           </header>
             <Dropdown
@@ -94,8 +95,8 @@ export default class Filterleases extends Component {
       placeholder='Select location'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">Building </p>
           </header>
             <Dropdown
@@ -112,8 +113,8 @@ export default class Filterleases extends Component {
       placeholder='Select building'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">unit Type</p>
           </header>
             <Dropdown
@@ -130,8 +131,8 @@ export default class Filterleases extends Component {
       placeholder='Select unittype'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">Amenity</p>
           </header>
             <Dropdown
@@ -151,14 +152,14 @@ export default class Filterleases extends Component {
   </div>
   <div className='row flex-wrap justify-cont-space-evenly'>
   
-  <div className='m-10'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mr-10px'>
+  <header className="App-header mb-10px">
             <p className="App-title">Range</p>
           </header>
   <span>$0</span><input type="range" min="0" max={'$100'} /><span>$100</span>
   </div>
-  <div className="mt-10 mb-2 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-20px ml-20px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">Filter</p>
           </header>
             <Dropdown
@@ -176,8 +177,8 @@ export default class Filterleases extends Component {
       onChange={this.handleDropdown}
   /></div>
   
-  <div className='mt-10 mb-2 min-width-110 ml-2'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mb-20px ml-10px min-width-110'>
+  <header className="App-header mb-10px">
             <p className="App-title">Move in dates between</p>
           </header>
   <InputField
@@ -190,8 +191,8 @@ export default class Filterleases extends Component {
                     ]}
                     onChange={this.handleChange('date')}/>
   </div>
-  <div className='mt-10 mb-2 min-width-110 ml-2'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mb-20px min-width-110'>
+  <header className="App-header mb-10px">
             <p className="App-title">to</p>
           </header>
   <InputField
@@ -204,16 +205,16 @@ export default class Filterleases extends Component {
                     ]}
                     onChange={this.handleChange('date')}/>
   </div>
-  <div className='mt-35  mb-4 pl-12'>
-  <Button  className=" butn-search border-pri text-pri "
+  <div className='mt-50px pl-12px'>
+  <Button  className=" button-search border-pri text-pri "
   onClick={this.handleClick}
   value='Search'/>
   </div>
   </div>
   
   </div>
-<div className='flex justify-cont-space-even ml-2 mt-20'>
-    <div className='  row'>
+<div className='flex justify-cont-space-even mt-40px ml-50px mb-20px'>
+    <div className='row'>
     <Checkbox
                     label='Include scheduled Move out tenants'
                     selected={acceptance}
@@ -224,19 +225,20 @@ export default class Filterleases extends Component {
   </div>
   </div>
   
-    <div className='Flex'>
+    <div>
      <SelectTableComponent className="fixTableHead" />
-     </div>
-     <div className='p-10 Flex just-content-center'>
-            <Button className="buttn buttn-danger text-white"
+     <div className='p-10 flex just-content-center'>
+            <Button className="button button-danger text-white"
                     onClick={this.handleClick}
                     value='Cancel'/>
-                <Button className="buttn button-save text-white"
+                <Button className="button button-save text-white"
                     onClick={this.handleClic}
                     value='Save'/>
             </div>
+     </div>
             </div>
             </div>
+          </section>
            
   
   

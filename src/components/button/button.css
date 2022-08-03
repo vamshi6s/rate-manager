@@ -1,0 +1,88 @@
+/*button*/
+.button {
+  padding: 8px 23px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  margin: 10px;
+}
+
+.button-icon {
+  padding: 2px 6px;
+  cursor: pointer;
+  height: 30px;
+  margin: 10px;
+}
+
+.text-danger {
+  color: #FE6363;
+}
+
+.text-pri {
+  color: #009EF7;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.button-danger {
+  border: #FE6363;
+  background-color: #FE6363;
+}
+
+.button-next {
+  background-color: #009EF7;
+  border: #009EF7;
+}
+
+.button-save {
+  background-color: #52B441;
+  border: #52B441;
+}
+
+.button-edit {
+  background-color: #A7B8D6;
+  border: #A7B8D6;
+}
+
+.button-remove {
+  background-color: #FF5771;
+  border: #FF5771;
+}
+
+.button-blue {
+  background-color: #1F86EF;
+  border: #1F86EF;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.pl-20px {
+  padding-left: 20px;
+}
+
+.pl-5px {
+  padding-left: 5px;
+}
+
+.pr-10px {
+  padding-right: 10px;
+}
+
+.button-search {
+  width: 150px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.border-pri {
+  border: 1px solid #009EF7;
+}/*# sourceMappingURL=button.css.map */

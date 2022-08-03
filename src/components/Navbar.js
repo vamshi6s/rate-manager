@@ -2,9 +2,12 @@ import React from 'react';
 import "../Styles/style.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser,faBell,faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/style.scss';
 import Flag from './flag/Flag';
+import notification from '../images/notification.svg';
+import User from '../images/User.png';
+import Logo from '../images/logo.jpg';
 
 const Navbar = ()=>{
     return(
@@ -15,16 +18,16 @@ const Navbar = ()=>{
                <FaBars onClick={toggle}/>
            </div> */}
 
-        <h1 >Logo</h1>
+        <span ><img className='ml-10px w-90px h-40px' src={Logo}/></span>
         </div>
         
         <div className="Left">
-        <div className="link1 link_text" ><FontAwesomeIcon icon={faBell} /></div>
+        <div className=" link_text" ><img src={notification}/></div>
         <span className="flag">
         <Flag />
        </span>
        <div className='user' >
-       <FontAwesomeIcon icon={faUser}/>
+       <img src={User}/>
        </div>
 
         </div>

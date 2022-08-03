@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Table from '../components/Table';
-import { data } from '../components/data/Mockdata';
-import { tableConstants } from '../components/TableConstant';
+import Table from './Table';
+import { data } from '../data/Mockdata';
+import { tableConstants } from './TableConstant';
 
 
 const Data = () => {

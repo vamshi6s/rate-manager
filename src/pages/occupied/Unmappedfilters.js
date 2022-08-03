@@ -8,7 +8,7 @@ import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
 import "../../Styles/style.scss";
 import Checkbox from '../../components/checkbox/Checkbox';
-import SelectTableComponent from '../../components/TableData';
+import SelectTableComponent from '../../components/tables/TableData';
 // import Modal from '../../components/Modal';
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
@@ -79,8 +79,8 @@ export default class Unmappedfilter extends Component {
             <div className='Cont1 m-auto border-radius-t-0 '>
                 
                 <div className='row flex-wrap justify-cont-space-evenly'>
-            <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+            <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">Storage Type</p>
           </header>
             <Dropdown
@@ -97,8 +97,8 @@ export default class Unmappedfilter extends Component {
       placeholder='Select Storage Type'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">Location</p>
           </header>
             <Dropdown
@@ -115,8 +115,8 @@ export default class Unmappedfilter extends Component {
       placeholder='Select location'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">Building </p>
           </header>
             <Dropdown
@@ -133,8 +133,8 @@ export default class Unmappedfilter extends Component {
       placeholder='Select building'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">unit Type</p>
           </header>
             <Dropdown
@@ -151,8 +151,8 @@ export default class Unmappedfilter extends Component {
       placeholder='Select unittype'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-10px min-width-110 ">
+          <header className="App-header mb-10px">
             <p className="App-title">Amenity</p>
           </header>
             <Dropdown
@@ -170,14 +170,14 @@ export default class Unmappedfilter extends Component {
       onChange={this.handleDropdown}
   /></div>
   <div className='row flex-wrap justify-cont-space-evenly'>
-  <div className='mt-10 mb-4 min-width-110 ml-2'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mr-10px'>
+  <header className="App-header mb-10px">
             <p className="App-title">Range</p>
           </header>
   <span>$0</span><input type="range" min="0" max={'$100'} /><span>$100</span>
   </div>
-  <div className="mt-10 mb-4 min-width-110 ml-2">
-          <header className="App-header mb-2">
+  <div className="mt-20px mb-20px ml-20px min-width-110">
+          <header className="App-header mb-10px">
             <p className="App-title">Filter</p>
           </header>
             <Dropdown
@@ -196,8 +196,8 @@ export default class Unmappedfilter extends Component {
   /></div>
   </div>
   
-  <div className='mt-10 mb-4 min-width-110 ml-2'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mb-20px ml-10px min-width-110'>
+  <header className="App-header mb-10px">
             <p className="App-title">Move in dates between </p>
           </header>
   <InputField
@@ -210,8 +210,8 @@ export default class Unmappedfilter extends Component {
                     ]}
                     onChange={this.handleChange('date')}/>
   </div>
-  <div className='mt-10 mb-2 min-width-110 ml-2'>
-  <header className="App-header mb-2">
+  <div className='mt-20px mb-20px min-width-110'>
+  <header className="App-header mb-10px">
             <p className="App-title">to</p>
           </header>
   <InputField
@@ -224,8 +224,8 @@ export default class Unmappedfilter extends Component {
                     ]}
                     onChange={this.handleChange('date')}/>
   </div>
-  <div className='mt-35  mb-4 pl-12'>
-  <Button  className=" butn-search border-pri text-pri "
+  <div className='mt-50px pl-12px'>
+  <Button  className=" button-search border-pri text-pri "
   onClick={this.handleClick}
   value='Search'/>
   </div>
@@ -235,8 +235,8 @@ export default class Unmappedfilter extends Component {
   
   
                 </div>
-                <div className='flex justify-cont-space-even mt-20'>
-    <div className='mt-10'>
+                <div className='flex justify-cont-space-even mt-30px ml-50px'>
+    <div className='mt-20px'>
     <Checkbox
                     label='Include scheduled Move out tenants'
                     selected={acceptance}
@@ -245,24 +245,37 @@ export default class Unmappedfilter extends Component {
 
 
   </div>
-  <div className='mr-10'>
+  <div className='mr-20px'>
 
-  <Button className="buttn buttn-next text-white"
+ < Button className="button button-next text-white"
 onClick={this.onClickButton}
   value='Update last price change'/>
   <Modal open={this.state.openModal} onClose={this.onCloseModal}>
-                    <h1>You Did it!</h1>
+    <div className="title">
+      <h4>Are You Sure You Want to Continue?</h4>
+      </div>
+      <div className="body">
+        <p>The next page looks amazing. Hope you want to go there!</p>
+        </div>
+        <div className="footer">
+        <Button className="button button-danger text-white"
+  onClick={this.handleClick}
+  value='No'/>
+
+<Button className="button button-next text-white"
+  onClick={this.handleClick}
+  value='Yes'/></div>
                     </Modal>
-  <Button className="buttn buttn-next text-white"
+  <Button className="button button-next text-white"
   onClick={this.handleClick}
   value='Map rules'/>
   </div>
   </div>
   
-    <div className='Flex'>
+    <div className='flex'>
      <SelectTableComponent className="fixTableHead" />
      </div>
-     <div className='p-10 Flex just-content-center'>
+     <div className='p-10 flex just-content-center'>
             <Button className="buttn buttn-danger text-white"
                     onClick={this.handleClick}
                     value='Cancel'/>

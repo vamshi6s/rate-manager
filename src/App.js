@@ -7,12 +7,9 @@ import Occupied from './pages/Occupied.js';
 import Filterleases from './pages/occupied/Filterleases';
 import Settings from './pages/Settings.js';
 import Reports from './pages/Reports.js';
-import Data from './pages/Data.js';
-import TableData from './pages/TableData';
-// import Date from './pages/Datepicker';
-// import Description from './pages/Description';
-import Yourrule from './pages/Yourrule';
-import Editrule from './pages/Editrule';
+import Data from './components/tables/Data.js';
+import Yourrule from './pages/occupied/Yourrule';
+import Editrule from './pages/occupied/Editrule';
 import Navbar from './components/Navbar';
 import Addrule from './pages/occupied/Addrule';
 import Unmappedfilter from './pages/occupied/Unmappedfilters';
@@ -35,12 +32,12 @@ const App = () => {
         {/* sidebar section */}
         <section>
           <div className='row'>
-            <div className='col-3 h-screen pl-2'>
+            <div className='col-3 pl-2'>
                 <Sidebar/>
             </div>
   
   
-            <div className='col-9 bg h-screen flex-grow md:col-span-10'>
+            <div className='col-9 bg scroll-y flex-grow md:col-span-10'>
                 <div className=" block">
                 <Routes>
           
@@ -54,9 +51,6 @@ const App = () => {
           <Route path='/reports' element={<Reports/>}/>
           <Route path="/settings" element={<Settings />} />
           <Route path="/data" element={<Data/>}/>
-          <Route path="/table" element={<TableData/>}/>
-          {/* <Route path='/description' element={<Description/>}/> */}
-          {/* <Route path="/date" element={<Datepicker/>}/> */}
           <Route path='/rule' element={<Yourrule/>}/>
           <Route path='/edit' element={<Editrule/>}/>
         </Routes>
