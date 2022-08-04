@@ -24,7 +24,7 @@ const App = () => {
     <Router> 
       <div>
       <section>
-          <div>
+          <div className='position-sticky'>
             <Navbar />
           </div>
         </section>
@@ -32,12 +32,12 @@ const App = () => {
         {/* sidebar section */}
         <section>
           <div className='row'>
-            <div className='col-3 pl-2'>
+            <div className='col-3 position-sticky pl-2'>
                 <Sidebar/>
             </div>
   
   
-            <div className='col-9 bg scroll-y flex-grow md:col-span-10'>
+            <div className='col-9 bg  flex-grow md:col-span-10'>
                 <div className=" block">
                 <Routes>
           
