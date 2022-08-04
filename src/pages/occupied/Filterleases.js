@@ -57,8 +57,9 @@ export default class Filterleases extends Component {
             <div className='m-auto '>
             <div className='block '>
               <div className='tag'><p><img className='w-15px' src={filterimg}/>  Filter Out leases add to rule1</p></div>
-            <div className='Cont1 m-auto border-radius-t-0 '>
-            <div className='row flex-wrap justify-cont-space-evenly'>
+              <div className='Container m-auto border-radius-t-0 '>
+                
+                <div className='row flex-wrap justify-cont-space-evenly'>
             <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">Storage Type</p>
@@ -77,7 +78,7 @@ export default class Filterleases extends Component {
       placeholder='Select Storage Type'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-20px mb-10px min-width-110">
+  <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">Location</p>
           </header>
@@ -95,7 +96,7 @@ export default class Filterleases extends Component {
       placeholder='Select location'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-20px mb-10px min-width-110">
+  <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">Building </p>
           </header>
@@ -113,7 +114,7 @@ export default class Filterleases extends Component {
       placeholder='Select building'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-20px mb-10px min-width-110">
+  <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">unit Type</p>
           </header>
@@ -131,7 +132,7 @@ export default class Filterleases extends Component {
       placeholder='Select unittype'
       onChange={this.handleDropdown}
   /></div>
-  <div className="mt-20px mb-10px min-width-110">
+  <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">Amenity</p>
           </header>
@@ -149,9 +150,7 @@ export default class Filterleases extends Component {
       placeholder='Select Amenity'
       onChange={this.handleDropdown}
   /></div>
-  </div>
   <div className='row flex-wrap justify-cont-space-evenly'>
-  
   <div className='mt-20px mr-10px'>
   <header className="App-header mb-10px">
             <p className="App-title">Range</p>
@@ -176,10 +175,11 @@ export default class Filterleases extends Component {
       placeholder='Select filter'
       onChange={this.handleDropdown}
   /></div>
+  </div>
   
   <div className='mt-20px mb-20px ml-10px min-width-110'>
   <header className="App-header mb-10px">
-            <p className="App-title">Move in dates between</p>
+            <p className="App-title">Move in dates between </p>
           </header>
   <InputField
   className='calender w-90 pl-10px'
@@ -211,7 +211,6 @@ export default class Filterleases extends Component {
   value='Search'/>
   </div>
   </div>
-  
   </div>
 <div className='flex justify-cont-space-even mt-40px ml-50px mb-20px'>
     <div className='row'>
@@ -225,7 +224,7 @@ export default class Filterleases extends Component {
   </div>
   </div>
   
-    <div>
+    <div className='mt-10px'>
      <SelectTableComponent className="fixTableHead" />
      <div className='p-10 flex just-content-center'>
             <Button className="button button-danger text-white"

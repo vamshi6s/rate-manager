@@ -12,7 +12,7 @@ import Button from '../../components/button/button';
 export default class Editrule extends Component {
     handleClick = (event) => {
         event.preventDefault();
-        window.location.href="/unoccupied";
+        alert("button clicked");
     };
     handleCl = (event) => {
         event.preventDefault();
@@ -20,9 +20,9 @@ export default class Editrule extends Component {
     }
     render() {
     return (
-             <section>
-        <div className='Cont box '>
-            <h4 className='h4 p-15px font-title'>Edit Rule</h4>
+             <section className='mt-30px'>
+        <div className='Container box '>
+            <h4 className='h4 p-15px font-title text-blue'>Edit Rule</h4>
             <div className='md-3 p-15px'>
                 <Add/>
             </div>
@@ -42,11 +42,11 @@ export default class Editrule extends Component {
             
        
         <div className='mt-20px ml-40px'><h4>10 Impacting Leases</h4></div>
-        <div className='mr-20px' ><Button className="button button-next text-white"
+        <div className='mr-20px' ><Button className="button button-blue text-white"
   onClick={this.handleClick}
   value='Remove leases'/></div>
    </div>
-        <div >
+        <div className='mt-20px' >
 
                 <SelectTableComponent className="fixTableHead" />
     

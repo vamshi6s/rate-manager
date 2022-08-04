@@ -4,16 +4,9 @@
 .Navbar{
     background-color: $whiteColor;
 }
-.Container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
-}
+
 /*Container*/
-.Cont{
+.Container-table{
   width: 95%;
   background-color: #fff; 
 
@@ -23,7 +16,7 @@
   
 
 }
-.Cont1{
+.Container{
   width: 88%;
   background-color: #fff; 
 
@@ -45,34 +38,7 @@
     font-size: $sidefontsize;
     font-weight: $sidefont-weight;
 }
-.form-select {
 
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-    -moz-padding-start: calc(0.75rem - 3px);
-     font-size: 15px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    outline: none;
-    scroll-behavior: smooth;
-
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.form-select:focus{
-  outline: none;
-}
-.form-select:after{
-  border-top: 5px solid #4d4d4d;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 0;
-}
 .form-control {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -193,6 +159,38 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
+.form-select {
+
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+   font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  outline: none;
+  scroll-behavior: smooth;
+
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-select:focus{
+outline: none;
+}
+.form-select option:focus{
+border:0;
+outline: none;
+}
+.form-select:after{
+border-top: 5px solid #4d4d4d;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 0;
+}
 .table1{
     margin: auto;
     margin-bottom: 1rem;
@@ -200,78 +198,16 @@
     vertical-align: top;
     border-color: #dee2e6;
 }
-.inpt-group {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-}
 
-.inpt-group>.form-control {
-  /* position: relative; */
-  /* -webkit-box-flex: 1; */
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 1%;
-  margin-bottom: 0;
-}
-.inpt-group-append {
-  margin-left: -5px;
-}
-.inpt-group-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 2px 5px;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-}
-.inpt{
-  width: 80px;
-  padding: 0.375rem 1rem 0.375rem 0.75rem;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-}
-.inpt:focus{
-  outline: none;
-}
 .tag{
   display: inline-block;
   margin-top: 20px;
-  margin-left: 4.1rem;
+  margin-left: 4.4rem;
   padding: 8px 20px;
   background: #009EF7;
   color: #fff;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-}
-/*text-area*/
-.text-area{
-  width: 50%;
-    height: 150px;
-    border-radius: 10px;
-    border: 1px solid #ced4da;
-}
-.text-area::placeholder{
-  font-size: 15px;
-  padding: 10px;
 }
 
 
@@ -437,7 +373,7 @@ position-sticky{
           .mr-#{1 * $i}px{
             margin-right:1px * $i;
             }
-            .mr-#{1 * $i}px{
+            .mb-#{1 * $i}px{
               margin-bottom:1px * $i;
               }
               .m-#{1 * $i}px{
@@ -523,4 +459,23 @@ position-sticky{
 .md\:col-span-10 {
   grid-column: span 10 / span 10;
 }
+}
+
+
+/*mobile responsive*/
+@media (min-width:1440px) and (max-width:1773px){
+  .tag{
+    margin-left:6rem;
+  }
+  .search{
+    width: 450px;
+  }
+}
+@media (min-width:1800px) {
+  .tag{
+    margin-left: 9.3rem;
+  }
+  .search{
+    width: 450px;
+  }
 }

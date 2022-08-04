@@ -27,7 +27,7 @@ export default class Ruledescription extends Component {
         const {text,message}=this.state;
     return (
              <section className='mt-50px'>
-        <div className='Cont box '>
+        <div className='Container box '>
             <h4 className='h4 p-15px font-title text-blue '>Add Rule</h4>
             <div className='md-3 pl-15px pt-6px pb-5px'>
                 <h4>RuleName</h4>

@@ -1,6 +1,6 @@
 export const data = [
     {
-      "Date": 1,
+      "Date": "1/12/2015",
       "rulesetby": "Leanne Graham",
       "rulename": "Rule 1",
       "rulecondition": "Sincere@april.biz",
@@ -8,21 +8,21 @@ export const data = [
       "gmail":'bnfg@',
     },
     {
-      "Date": 2,
+      "Date":"1/12/2015",
       "rulesetby": "Ervin Howell",
       "rulename": "Rule 3",
       "rulecondition": "Shanna@melissa.tv",
       "numberofimpactingleases": "1",
     },
     {
-        "Date": 3,
+        "Date": "1/12/2015",
         "rulesetby": "Ervin Howell",
         "rulename": "Rule 2",
         "rulecondition": "Shanna@melissa.tv",
         "numberofimpactingleases": "6",
       },
       {
-        "Date": 4,
+        "Date": "1/12/2015",
         "rulesetby": "Ervin Howell",
         "rulename": "Rule 1",
         "rulecondition": "Shanna@melissa.tv",

@@ -12,12 +12,12 @@ import SelectTableComponent from '../../components/tables/TableData';
 // import Modal from '../../components/Modal';
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
+import filterimg from '../../images/filterr.png';
 
 
 
 export default class Unmappedfilter extends Component {
     state={
-        
         StorageType:'',
         location:'',
         building:'',
@@ -30,13 +30,6 @@ export default class Unmappedfilter extends Component {
 
         
     }
-    // openModal=(event)=>{
-    //   event.preventDefault();
-      
-    // }
-    // handleModal(){  
-    //   this.setState({show:!this.state.show})  
-    // }
     onClickButton = e =>{
       e.preventDefault()
       this.setState({openModal : true})
@@ -72,11 +65,11 @@ export default class Unmappedfilter extends Component {
     render(){ 
         const {location,StorageType,building,unittype,filter,amenity,date,acceptance} = this.state;
     return (
-      
+      <section>
             <div className='m-auto'>
             <div className='block '>
-              <div className='tag'><p>Filter Out Unmapped leases</p></div>
-            <div className='Cont1 m-auto border-radius-t-0 '>
+              <div className='tag'><p><img className='w-15px' src={filterimg}/>Filter Out Unmapped leases</p></div>
+            <div className='Container m-auto border-radius-t-0 '>
                 
                 <div className='row flex-wrap justify-cont-space-evenly'>
             <div className="mt-20px mb-10px min-width-110 ">
@@ -272,18 +265,19 @@ onClick={this.onClickButton}
   </div>
   </div>
   
-    <div className='flex'>
+    <div className=' mt-10px flex'>
      <SelectTableComponent className="fixTableHead" />
      </div>
      <div className='p-10 flex just-content-center'>
-            <Button className="buttn buttn-danger text-white"
+            <Button className="button button-danger text-white"
                     onClick={this.handleClick}
                     value='Cancel'/>
-                <Button className="buttn button-save text-white"
+                <Button className="button button-save text-white"
                     onClick={this.handleClic}
                     value='Save'/>
             </div>
             </div>
+            </section>
   
     );}
 

@@ -21,7 +21,7 @@ const Navbar = ()=>{
         <span ><img className='ml-10px w-90px h-40px' src={Logo}/></span>
         </div>
         
-        <div className="Left">
+        <div className="Left mr-10px">
         <div className=" link_text" ><img src={notification}/></div>
         <span className="flag">
         <Flag />

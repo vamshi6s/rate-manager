@@ -14,7 +14,7 @@ import Navbar from './components/Navbar';
 import Addrule from './pages/occupied/Addrule';
 import Unmappedfilter from './pages/occupied/Unmappedfilters';
 import Rule from './pages/occupied/Rule';
-import Ruledescription from './pages/occupied/Rulename';
+import Ruledescription from './pages/occupied/RuleDescription';
 
 
 

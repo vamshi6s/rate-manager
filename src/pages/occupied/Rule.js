@@ -24,7 +24,7 @@ export default class Rule extends Component{
     render(){
         const{text}=this.state
         return(
-            <section>
+            <section className='mt-30px'>
                     <div className='m-auto'>
             <div className='block mt-35px'>
                 <div className=' text-pri Right ml-30px' >
@@ -34,12 +34,12 @@ export default class Rule extends Component{
                 
                 <div className='row'>
                      <div className=' text-pri Right ml-30px'>
-                <h4>Show</h4>
+                
                 </div>
-                <div className='Middle pl-20px '>
+                <div className='Middle pl-10px '>
                     
                 <InputField
-                className='search'
+                className='search ml-30px'
                     value={text}
                     type='text'
                     placeholder=' Search'

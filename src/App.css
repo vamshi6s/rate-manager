@@ -10,7 +10,7 @@
   padding: 20px;
 } */
 .sidebar{
-  background: #112B3C;
+  background: #1D2E38;
   color: #fff;
   height: 140vh;
 
@@ -21,7 +21,7 @@
   height: 40px;
   width: 100%;
   display: flex;
-  border-bottom:  1px solid grey;
+  border-bottom:  1px solid rgb(50 50 93 / 10%);
   
 
 }
@@ -83,15 +83,14 @@
   display: block;
 }
 .link:hover{
-  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, var(--unnamed-color-1d2e38) 100%) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, #1D2E38 100%) 0% 0% no-repeat padding-box;
+  background: hsl(203deg 100% 34% / 30%);
+
   opacity: 1;
   transition: all 0.5s;
 }
 .active{
-  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, var(--unnamed-color-1d2e38) 100%) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(87deg, #00A3FF00 0%, #0781C604 2%, #1D2E38 100%) 0% 0% no-repeat padding-box;
-  opacity: 1;
+    opacity: 1;
+  background-color:hsl(203deg 100% 34% / 30%);
 }
 .icon, .link_text{
   font-size: 16px;
@@ -115,22 +114,8 @@ mb{
 .just-content-center{
   justify-content: center;
 }
-.button{
-  /* width: 80px; */
-  height: 30px;
-}
-.app-button  {
-  padding: 10px 30px;
-  border: none;
-  background-color: tomato;
-  color: white;
-  font-weight: bold;
-  transition: all 0.4s;
-}
 
-.app-button:hover {
-  background: brown;
-}
+
 .table.ml-15 tbody tr td {
   padding: 3px;
 }
@@ -154,7 +139,7 @@ mb{
 	width: 100%;
 	}
 	.fixTableHead thead th {
-	position: sticky;
+	/* position: sticky; */
 	top: 0;
 	}
 	.fixTableHead th,

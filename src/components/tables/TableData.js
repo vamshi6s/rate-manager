@@ -99,7 +99,7 @@ class SelectTableComponent extends React.Component {
 
   render() {
     return (
-      <div className="Cont">
+      <div className="Container-table">
         <div className="row">
             <table className="fixTableHead">
               <thead>

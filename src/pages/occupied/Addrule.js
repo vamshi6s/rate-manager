@@ -21,7 +21,7 @@ export default class Addrule extends Component {
     render() {
     return (
              <section className='mt-50px'>
-        <div className='Cont box '>
+        <div className='Container box '>
             <h4 className='h4 p-15px font-title text-blue'>Add Rule</h4>
             <div className='md-3 p-15px'>
                 <Add/>

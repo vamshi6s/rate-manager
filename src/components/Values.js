@@ -81,9 +81,9 @@ export default class Values extends Component {
       </div>
                 </td>
                 <td>
-                    <a className="text-danger font-size-18 pl-20px pr-10px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
+                    <a className="text-danger font-size-18 pl-25px pr-10px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
                     <td>
-                    <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
+                    <a className="text-pri font-size-18 pl-8px pr-10px" href="https://github.com/" onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
                 </td>
             </tr>
         </tbody>

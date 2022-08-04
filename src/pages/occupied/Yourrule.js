@@ -42,16 +42,16 @@ export default class Yourrule extends Component {
             <div className='m-auto'>
             <div className='block mt-35px'>
             <div className='text-pri Right ml-30px'>
-                <h4>Your Rule</h4>
+                
             </div>
                 
                 <div className='row'>
                      <div className='text-pri Right ml-30px'>
-                <h4>Show</h4>
+                     <h4>Your Rule</h4>
                 </div>
                 <div className='Middle pl-20px '>
                 <InputField
-                 className='search'
+                 className='search ml-30px'
                     value={text}
                     type='text'
                     placeholder='Search'
@@ -69,7 +69,7 @@ export default class Yourrule extends Component {
   
   
                 
-                <div className='Cont'>
+                <div className='Container-table mt-10px'>
 
     <Data/>
     
