@@ -56,7 +56,7 @@
 }
 
 /*input*/
-.inpt-group {
+.input-grp {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,7 @@
   width: 100%;
 }
 
-.inpt-group > .form-control {
+.input-group > .form-control {
   /* position: relative; */
   /* -webkit-box-flex: 1; */
   flex: 1 1 auto;
@@ -72,11 +72,11 @@
   margin-bottom: 0;
 }
 
-.inpt-group-append {
+.input-group-append {
   margin-left: -5px;
 }
 
-.inpt-group-text {
+.input-group-text {
   display: flex;
   align-items: center;
   padding: 2px 10px 2px 5px;

@@ -7,6 +7,7 @@ import Button from '../../components/button/button';
 import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
 import "../../Styles/style.scss";
+import '../../components/tables/table.scss';
 import Checkbox from '../../components/checkbox/Checkbox';
 import SelectTableComponent from '../../components/tables/TableData';
 // import Modal from '../../components/Modal';
@@ -71,7 +72,7 @@ export default class Unmappedfilter extends Component {
               <div className='tag'><p><img className='w-15px' src={filterimg}/>Filter Out Unmapped leases</p></div>
             <div className='Container m-auto border-radius-t-0 '>
                 
-                <div className='row flex-wrap justify-cont-space-evenly'>
+                <div className='row flex-wrap justify-space-evenly'>
             <div className="mt-20px mb-10px min-width-110 ">
           <header className="App-header mb-10px">
             <p className="App-title">Storage Type</p>
@@ -162,7 +163,7 @@ export default class Unmappedfilter extends Component {
       placeholder='Select Amenity'
       onChange={this.handleDropdown}
   /></div>
-  <div className='row flex-wrap justify-cont-space-evenly'>
+  <div className='row flex-wrap justify-space-evenly'>
   <div className='mt-20px mr-10px'>
   <header className="App-header mb-10px">
             <p className="App-title">Range</p>
@@ -268,7 +269,7 @@ onClick={this.onClickButton}
     <div className=' mt-10px flex'>
      <SelectTableComponent className="fixTableHead" />
      </div>
-     <div className='p-10 flex just-content-center'>
+     <div className='p-10 flex justify-center'>
             <Button className="button button-danger text-white"
                     onClick={this.handleClick}
                     value='Cancel'/>

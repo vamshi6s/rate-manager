@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Checkbox = ({label, selected, styleClass, onChange}) => {
+const Checkbox = ({label, selected, styleClass,className, onChange}) => {
 
     const handleChange = (event) => {
         const {checked} = event.target;
@@ -13,7 +13,7 @@ const Checkbox = ({label, selected, styleClass, onChange}) => {
             <label>
                 <input
                     type="checkbox"
-                    className='mr-2 ml-10'
+                    className={className}
                     value={selected}
                     defaultChecked={selected}
                     onChange={handleChange}/>

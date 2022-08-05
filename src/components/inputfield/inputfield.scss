@@ -44,7 +44,7 @@
   }
 
   /*input*/
-  .inpt-group {
+  .input-grp {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,7 +57,7 @@
     width: 100%;
   }
   
-  .inpt-group>.form-control {
+  .input-group>.form-control {
     /* position: relative; */
     /* -webkit-box-flex: 1; */
     -ms-flex: 1 1 auto;
@@ -65,10 +65,10 @@
     width: 1%;
     margin-bottom: 0;
   }
-  .inpt-group-append {
+  .input-group-append {
     margin-left: -5px;
   }
-  .inpt-group-text {
+  .input-group-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,4 +96,4 @@
   .inpt:focus{
     outline: none;
   }
-  
+ 

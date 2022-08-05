@@ -20,23 +20,23 @@ const Data = () => {
       </div>
 
 
-      // {/* <div className='col-sm-6'>
+      // {/* <div className='col-small-6'>
 
       //   <h4>Dark Table</h4>
       //   <Table cols={tableConstants(handleEdit)} data={data} isDark />
       // </div>
 
-      // <div className='col-sm-6'>
+      // <div className='col-small-6'>
       //   <h4>Borderless Table</h4>
       //   <Table cols={tableConstants(handleEdit)} data={data} bordered={false} />
       // </div>
 
-      // <div className='col-sm-6'>
+      // <div className='col-small-6'>
       //   <h4>Striped Table</h4>
       //   <Table cols={tableConstants(handleEdit)} data={data} striped />
       // </div>
 
-      // <div className='col-sm-6'>
+      // <div className='col-small-6'>
       //   <h4>Hoverable Table</h4>
       //   <Table cols={tableConstants(handleEdit)} data={data} hoverable />
       // </div> */}

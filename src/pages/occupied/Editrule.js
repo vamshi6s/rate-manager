@@ -4,10 +4,9 @@ import '../../Styles/style.scss';
 import Add from '../../components/Add';
 import Mode from '../../components/Mode';
 import Values from '../../components/Values';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 import SelectTableComponent from '../../components/tables/TableData';
 import Button from '../../components/button/button';
+import plus from '../../images/Add.svg';
 
 export default class Editrule extends Component {
     handleClick = (event) => {
@@ -33,7 +32,7 @@ export default class Editrule extends Component {
                 <Values/>
             </div>
             <div className='mb-3 pt-20px pb-20px pl-40px'>
-            <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleCl}><FontAwesomeIcon icon= {faSquarePlus}/>   Add Rule</a> 
+            <a className="text-pri font-size-18 pl-10px pr-10px" href="https://github.com/" onClick={this.handleCl}><img className="w-15px mt-5px" src={plus}/>  Add Rule</a> 
             </div>
             
           

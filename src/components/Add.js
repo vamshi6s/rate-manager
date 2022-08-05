@@ -6,7 +6,7 @@ const Add = () => {
     const options = [
         { label: 'Rule 1', value: 'Rule 1' },
         { label: 'Rule 2', value: 'Rule 2' },
-        { label: 'Rule 3', value: 'Rule 3' },
+        { label: 'Rule 3', value: 'Rule 3' },       
       ];
     
       const [value, setValue] = React.useState('Rule');

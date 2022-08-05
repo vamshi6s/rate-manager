@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import "@fontsource/poppins";
+import'./Styles/sty.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard.js';
@@ -31,13 +33,13 @@ const App = () => {
   
         {/* sidebar section */}
         <section>
-          <div className='row'>
-            <div className='col-3 position-sticky pl-2'>
+          <div className='flex'>
+            <div className=' position-sticky pl-2'>
                 <Sidebar/>
             </div>
   
   
-            <div className='col-9 bg  flex-grow md:col-span-10'>
+            <div className=' bg  flex-grow md:col-span-10'>
                 <div className=" block">
                 <Routes>
           

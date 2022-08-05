@@ -29,7 +29,6 @@
 
 .font-title{
     font-family: $titlefont;
-    font-size: $titlefontsize;
     font-weight: $titlefont-weight;
 }
 
@@ -60,7 +59,7 @@
 .flex-wrap{
   flex-wrap: wrap;
 }
-.justify-cont-space-evenly{
+.justify-space-evenly{
   justify-content: space-evenly;
 }
 
@@ -87,7 +86,7 @@
 
 
 /* CSS */
-.butn {
+.buttn {
   appearance: none;
   background-color: #FAFBFC;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -145,7 +144,7 @@
   display: none;
 }
 
-.inp-grp{
+.input-group{
     display: flex;
     align-items: center;
     padding: 0.375rem 0.75rem;
@@ -170,7 +169,7 @@
   background-color: #fff;
   outline: none;
   scroll-behavior: smooth;
-
+  border:  1px solid #E5E4E4;
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
@@ -276,24 +275,19 @@ border-bottom: 0;
   width: 100%;
 }
 /*columns*/
-.col-3{
-  position: relative;
-}
-.col-9{
-  position: relative;
-}
 
-.col-1, .col-2, .col-4, .col-5, .col-6, .col-7, .col-8, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
-.col-xl-auto {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
+// .col-1, .col-2, .col-4, .col-5, .col-6, .col-7, .col-8, .col-10, .col-11, .col-12, .col,
+// .col-auto, .col-small-1, .col-small-2, .col-small-3, .col-small-4, .col-small-5, .col-small-6, .col-small-7, .col-small-8, .col-small-9, .col-small-10, .col-small-11, .col-small-12, .col-small,
+// .col-small-auto, .col-medium-1, .col-medium-2, .col-medium-3, .col-medium-4, .col-medium-5, .col-medium-6, .col-medium-7, .col-medium-8, .col-medium-9, .col-medium-10, .col-medium-11, .col-medium-12, .col-medium,
+// .col-medium-auto, .col-large-1, .col-large-2, .col-large-3, .col-large-4, .col-large-5, .col-large-6, .col-large-7, .col-large-8, .col-large-9, .col-large-10, .col-large-11, .col-large-12, .col-large,
+// .col-large-auto, .col-xlarge-1, .col-xlarge-2, .col-xlarge-3, .col-xlarge-4, .col-xlarge-5, .col-xlarge-6, .col-xlarge-7, .col-xlarge-8, .col-xlarge-9, .col-xlarge-10, .col-xlarge-11, .col-xlarge-12, .col-xlarge,
+// .col-xlarge-auto {
+//   position: relative;
+//   width: 100%;
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
 
 
 
@@ -346,11 +340,11 @@ position-sticky{
   align-items: center;
   justify-content: center;
 }
-.justify-cont-space-even{
+.justify-space-between{
   justify-content:space-between;
 }
 
-    @for $i from 1 through 20{
+    @for $i from 1 through 50{
       /*padding top .pt-15*/
       .pt-#{ $i*1}px{
       padding-top:1px * $i !important;
@@ -386,6 +380,18 @@ position-sticky{
                     width:5px * $i;
                     }
     }
+    .mt-53px{
+      margin-top: 53px;
+    }
+/* font-size*/
+@for $i from 1 through 30{
+   .font-size-#{1*$i}px{
+    font-size: 1px * $i;
+   }
+}
+
+
+
     
 
 
@@ -404,7 +410,7 @@ position-sticky{
           .pl-#{5 * $i}px{
             padding-left:5px * $i;
             }
-            .pt-#{5 * $i}px{
+            .pb-#{5 * $i}px{
               padding-bottom:5px * $i;
               }
               .mt-#{5 * $i}px{
@@ -435,8 +441,11 @@ position-sticky{
       width:10% * $i;
       }
   }
+  .w-92{
+    width: 92%;
+  }
   /* width-pixel*/
-  @for $i from 1 through 10{
+  @for $i from 1 through 20{
       .t-#{1*$i}px{
         top:1px *$i;
       }
@@ -444,7 +453,18 @@ position-sticky{
         height: 5px *$i;
 
       }
+      .border-radius-#{1*$i}px{
+        border-radius: 1px *$i;
+
+      }
   }
+  .border-box{
+    border: 1px solid #ced4da;
+  }
+  .border-dashed{
+    border-bottom:1px dashed #ced4da;
+  }
+  
   
 .mt-100px{
   margin-top: 100px;
@@ -463,9 +483,17 @@ position-sticky{
 
 
 /*mobile responsive*/
-@media (min-width:1440px) and (max-width:1773px){
+@media (min-width:1540px) and (max-width:1773px){
   .tag{
     margin-left:6rem;
+  }
+  .search{
+    width: 450px;
+  }
+}
+@media (min-width:1440px) and (max-width:1540px){
+  .tag{
+    margin-left:4.7rem;
   }
   .search{
     width: 450px;

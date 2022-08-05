@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../Styles/style.scss';
 
-const Dropdown = ({value, data, placeholder, styleClass, onChange}) => {
+const Dropdown = ({value, data, placeholder, styleClass,className, onChange}) => {
 
     const handleChange = (event) => {
         const {value} = event.target;
@@ -13,7 +13,7 @@ const Dropdown = ({value, data, placeholder, styleClass, onChange}) => {
         <div className={`form-group ${styleClass}`}>
             <select
                 value={value}
-                className="form-select"
+                className={className}
                 onChange={handleChange}>
                 <option value="">{placeholder}</option>
                 {data.map((item, key) => (

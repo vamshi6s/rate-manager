@@ -1,0 +1,53 @@
+/*selected table*/
+.fixTableHead {
+  overflow-y: auto;
+  height: 110px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.fixTableHead thead th {
+  /* position: sticky; */
+  top: 0;
+}
+
+.fixTableHead th,
+.fixTableHead td {
+  padding: 18px;
+}
+
+.fixTableHead thead {
+  border-bottom: 1px solid rgba(50, 50, 93, 0.1);
+  color: #1F86EF;
+}
+
+.fixTableHead tbody tr td {
+  text-align: center;
+}
+
+/*common table*/
+.commontable {
+  overflow-y: auto;
+  height: 110px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.commontable thead th {
+  /* position: sticky; */
+  top: 0;
+}
+
+.commontable th,
+.commontable td {
+  padding: 18px;
+}
+
+.commontable thead {
+  border-bottom: 1px solid rgba(50, 50, 93, 0.25);
+  color: #1F86EF;
+}
+
+.commontable tbody tr td {
+  text-align: center;
+}/*# sourceMappingURL=table.css.map */

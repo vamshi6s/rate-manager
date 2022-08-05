@@ -28,22 +28,22 @@ export default class Ruledescription extends Component {
     return (
              <section className='mt-50px'>
         <div className='Container box '>
-            <h4 className='h4 p-15px font-title text-blue '>Add Rule</h4>
-            <div className='md-3 pl-15px pt-6px pb-5px'>
-                <h4>RuleName</h4>
+            <h4 className='h4  font-title font-size-20px pt-15px pb-15px pl-25px text-blue '>Add Rule</h4>
+            <div className=' pt-20px pb-1px pl-25px'>
+                <h4 className='font-size-18px'>RuleName</h4>
             </div>
-            <div className='mb-3 pl-15px pt-6px pb-5px'>
+            <div className=' pt-10px pb-1px pl-25px'>
             <InputField 
-            className='form-select'
+            className='form-select w-40'
                     value={text}
                     type='text'
                     placeholder=''
                     onChange={this.handleChange('text')}/>
             </div>
-            <div className='mb-3 pl-15px pt-6px pb-5px'>
-                <h4>Rule Description</h4>
+            <div className='pt-20px pb-1px pl-25px'>
+                <h4 className='font-size-18px'>Rule Description</h4>
             </div>
-            <div className='mb-3 pl-15px pt-6px pb-5px'>
+            <div className='pt-10px pb-1px pl-25px'>
             <InputField
             className='text-area'
                     value={message}
@@ -54,11 +54,11 @@ export default class Ruledescription extends Component {
                     ]}
                     onChange={this.handleChange('message')}/>
             </div>
-            <div className='p-10 flex just-content-center'>
-            <Button className="button button-danger text-white"
+            <div className='pr-5px flex justify-center'>
+            <Button className="button button-danger font-size-15px text-white mr-2px"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="button button-next text-white "
+                <Button className="button button-next font-size-15px text-white pl-30px pr-30px "
                     onClick={this.handleClick}
                     value='Next'/>
             </div>
