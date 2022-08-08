@@ -26,9 +26,7 @@ export default class Addrule extends Component {
             <div className='pt-20px pb-1px pl-25px'>
                 <Add/>
             </div >
-            <div className='pt-20px pb-1px pl-25px'>
-                <Rulename/>
-            </div> 
+             
             <div className='m-30px pb-50px border-box border-radius-5px'>
             <div className=' pt-25px pb-12px pl-30px'>
                 <Mode/>

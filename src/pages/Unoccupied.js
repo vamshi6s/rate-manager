@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
+import Drop from '../components/dropdown/Drop';
+import '../App.css';
 
-export default class Unoccupied extends Component {
-  render() {
+const Unoccupied=()=> {
     return (
-      <div></div>
+      <div>
+        <Drop/>
+      </div>
     )
-  }
-}
+  };
+export default Unoccupied;

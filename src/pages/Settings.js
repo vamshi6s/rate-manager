@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import'../App.css';
 
-export default class Settings extends Component {
-  render() {
-    return (
-      <div></div>
-    )
-  }
+function Settings() {
+  
+  return (
+    <div>Settings</div>
+  );
 }
+
+export default Settings;

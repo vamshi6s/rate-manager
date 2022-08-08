@@ -17,6 +17,7 @@ import Addrule from './pages/occupied/Addrule';
 import Unmappedfilter from './pages/occupied/Unmappedfilters';
 import Rule from './pages/occupied/Rule';
 import Ruledescription from './pages/occupied/RuleDescription';
+import Unoccupied from './pages/Unoccupied';
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
           
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path="/Occupied" element={<Occupied />} />
+          <Route path="/Unoccupied" element={<Unoccupied />} />
           <Route path="/addrule" element={<Addrule/>}/>
           <Route path="/filterleases" element={<Filterleases/>} />
           <Route path='/unmapped' element={<Unmappedfilter/>}/>

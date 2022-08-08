@@ -1,18 +1,17 @@
-import * as React from 'react';
-import '../Styles/style.scss';
+import React from 'react';
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 
-const Add = () => {
-    const { buttonProps, itemProps, isOpen } = useDropdownMenu(3);
+const Drop=() => {
+	// Use the Hook
+	const { buttonProps, itemProps, isOpen } = useDropdownMenu(3);
 return (
 <div className='row'>
-							<div className='d-inline-block ml-10 h-60px'>
-                            <span className='pr-20px side-font'>Add rule</span>
-								<button {...buttonProps} type='button' className='dropdown font-size-12px w-10 p-6px'>
-									<span className='pr-20px'>New Rule</span>
+							<div>
+								<button {...buttonProps} type='button' className='dropdown-button'>
+									<span>Try me!</span>
 									<FontAwesomeIcon icon={faAngleDown} />
 								</button>
 
@@ -41,7 +40,9 @@ return (
 									</a>
 								</div>
 							</div>
-						</div>)
+						</div>
+
+)
 };
 
-export default Add;
+export default Drop;

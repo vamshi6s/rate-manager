@@ -41,14 +41,14 @@ export default class Values extends Component {
           {value: 5, label: 'Russia'},
           {value: 5, label: 'Italy'},
       ]}
-      className="dropdown p-8px"
+      className="dropdown font-size-12px  p-6px"
       styleClass='mt-3'
       value={country}
       placeholder='Select Country'
       onChange={this.handleDropdown}
   />
                 </td>
-                <td><p className="ml-6px font-size-14px mr-6px">Rental price by</p></td>
+                <td><p className="ml-6px font-size-13px mr-6px">Rental price by</p></td>
                 <td>
                     <div className="ml-6px">
                 <InputField
@@ -64,21 +64,21 @@ export default class Values extends Component {
                 
                 </td>
                 <td>
-                    <p className="ml-6px font-size-14px ml-6px">When price has not changed in</p>
+                    <p className="ml-6px font-size-13px ml-6px">When price has not changed in</p>
                 </td>
                 <td>
-                <div class="input-group ml-10px">
+                <div class="flex ml-10px">
                 <InputField
                     value={text}
                     type='text'
-                    className="inpt"
+                    className="inpt h-22px"
                     
                     validators={[
                         {check: Validators.required, message: 'This field is required'}
                     ]}
                     onChange={this.handleChange('text')}/>
         <div class="input-group-append">
-          <span class="input-group-text" id="basic-addon2">Days</span>
+          <span class="input-group-text h-30px font-size-13px" id="basic-addon2">Days</span>
         </div>
       </div>
                 </td>

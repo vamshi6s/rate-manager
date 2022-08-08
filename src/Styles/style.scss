@@ -313,8 +313,12 @@ border-bottom: 0;
 .inline-flexbox {
   display: inline-flexbox ;
 }
-position-sticky{
+/* positions*/
+.position-sticky{
   position: sticky;
+}
+.position-relative{
+  position: relative;
 }
 .grid {
   display: grid;

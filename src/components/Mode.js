@@ -7,9 +7,9 @@ const Mode =() =>{
             <form action=''>
                     <span className=" ml-15 pr-10px side-font">Mode of Changes:</span>
                     <input className="mr-6px" type="radio" id='fixedamount' name="radio"/>
-                   <label className="mr-6px" for="fixedamount">Fixed Amount</label>
+                   <label className="mr-6px font-size-13px" for="fixedamount">Fixed Amount</label>
                   <input className="mr-6px" type="radio" id='percentage' name="radio"/>
-                  <label for="percentage">Percentage</label>
+                  <label className="font-size-13px" for="percentage ">Percentage</label>
                 </form>
         </div>
     )

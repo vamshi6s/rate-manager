@@ -56,8 +56,8 @@ export default class Filterleases extends Component {
     return (
       <section className='mt-30px'>
             <div className='m-auto '>
-            <div className='block '>
-              <div className='tag'><p><img className='w-15px' src={filterimg}/>  Filter Out leases add to rule1</p></div>
+            <div className='block position-relative '>
+              <div className='tag'><p className='font-size-14px'><img className=' w-15px' src={filterimg}/>  Filter Out leases add to rule1</p></div>
               <div className='Container m-auto border-radius-t-0 '>
                 
                 <div className='row justify-space-evenly '>

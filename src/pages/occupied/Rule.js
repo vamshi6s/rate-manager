@@ -1,5 +1,5 @@
 import {React,Component} from 'react';
-
+import '../../App.css';
 // import Filterlease from '../components/Filterlease';
 import Button from '../../components/button/button';
 import InputField from '../../components/inputfield/inputField';
