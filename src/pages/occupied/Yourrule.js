@@ -42,7 +42,7 @@ export default class Yourrule extends Component {
             <div className='m-auto'>
             <div className='block mt-35px'>
             <div className='text-pri Right ml-30px'>
-                
+                <h4>Your Rule</h4>
             </div>
                 
                 <div className='row'>
