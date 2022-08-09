@@ -7,6 +7,8 @@ import InputField from '../../components/inputfield/inputField';
 import '../../components/inputfield/inputfield.scss';
 import '../../Styles/style.scss';
 import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -38,23 +40,27 @@ export default class Yourrule extends Component {
                 <h4>Your Rule</h4>
             </div>
                 
-                <div className='row'>
+                <div className='row mb-20px'>
                      <div className='text-pri column1 ml-30px'>
-                     <h4>Your Rule</h4>
+                     <h4 className='font-size-18px'>Your Rule</h4>
                 </div>
-                <div className='column2 pl-20px '>
+                <div className='column2 mt-8px ml-45px search-icon h-25px flex pl-20px '>
+                    <div className='pl-5px pr-5px' >
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="Bars font-size-12px text-blue"/></div>
+                <div>
                 <InputField
-                 className='search ml-30px'
+                 className='search'
                     value={text}
                     type='text'
                     placeholder='Search'
                     onChange={this.handleChange('text')}/>
                     </div>
-                    <div className='column3 mr-30px'>
-                    <Link to='/edit'><Button className="button button-next text-white"
+                    </div>
+                    <div className='column3 mr-15px'>
+                    <Link to='/edit'><Button className="button button-next font-size-13px pl-10px pr-10px text-white"
                     onClick={this.handleCli}
                     value='Add New Rule'/></Link>
-                    <Link to='/unmapped'><Button className="button button-next text-white"
+                    <Link to='/unmapped'><Button className="button button-next font-size-13px pl-10px pr-10px text-white"
                     onClick={this.handleClic}
                     value='View Unmapped Leases'/></Link>
                     </div>

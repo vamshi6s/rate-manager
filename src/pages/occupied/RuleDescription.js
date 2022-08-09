@@ -51,11 +51,11 @@ export default class Ruledescription extends Component {
                     ]}
                     onChange={this.handleChange('message')}/>
             </div>
-            <div className='pr-5px flex justify-center'>
-            <Button className="button button-danger font-size-15px text-white mr-2px"
+            <div className='pr-5px mt-20px flex justify-center'>
+            <Button className="button button-danger mb-25px font-size-13px text-white mr-10px"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Link to='/addrule'><Button className="button button-next font-size-15px text-white pl-30px pr-30px "
+                <Link to='/addrule'><Button className="button button-next font-size-13px text-white pl-35px pr-35px "
                     value='Next'/></Link>
             </div>
           

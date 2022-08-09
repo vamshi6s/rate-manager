@@ -1,16 +1,16 @@
 /*button*/
 .button {
-  padding: 4px 27px;
+  padding: 4px 30px;
   border-radius: 5px;
   cursor: pointer;
-  height: 40px;
+  height: 35px;
   margin: 10px;
 }
 
 .button-icon {
   padding: 2px 6px;
   cursor: pointer;
-  height: 30px;
+  height: 24px;
   margin: 10px;
 }
 

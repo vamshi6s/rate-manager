@@ -22,43 +22,31 @@ export default class Filterleases extends Component {
         { key: "Option 1", cat: "Group 1" },
         { key: "Option 2", cat: "Group 1" },
         { key: "Option 3", cat: "Group 1" },
-        { key: "Option 4", cat: "Group 2" },
-        { key: "Option 5", cat: "Group 2" },
       ],
         location:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         building:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         unittype:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         filter:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         amenity:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         date:'',
         acceptance: false,
@@ -100,6 +88,7 @@ export default class Filterleases extends Component {
   options={StorageType}
   singleSelect
   displayValue="key"
+  placeholder='  Select StorageType'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -111,7 +100,7 @@ export default class Filterleases extends Component {
   options={location}
   singleSelect
   displayValue="key"
-  placeholder='Select location'
+  placeholder='  Select location'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -123,7 +112,7 @@ export default class Filterleases extends Component {
   options={building}
   singleSelect
   displayValue="key"
-  placeholder='Select location'
+  placeholder='  Select building'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -135,7 +124,7 @@ export default class Filterleases extends Component {
   options={unittype}
   singleSelect
   displayValue="key"
-  placeholder='Select location'
+  placeholder='  Select unittype'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -147,7 +136,7 @@ export default class Filterleases extends Component {
   options={amenity}
   singleSelect
   displayValue="key"
-  placeholder='Select location'
+  placeholder='  Select amenity'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -166,7 +155,7 @@ export default class Filterleases extends Component {
   options={filter}
   singleSelect
   displayValue="key"
-  placeholder='Select location'
+  placeholder='  Select filter'
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
@@ -208,13 +197,13 @@ export default class Filterleases extends Component {
   </div>
   </div></div>
 <div className='flex mt-40px ml-40px mb-20px'>
-    <div className='row'>
+    <div className='row mb-20px pr-1px'>
     <Checkbox
-            className='font-size-18px mr-10px'
+            className='font-size-12px '
                     selected={acceptance}
                     onChange={this.handleCheckbox}
                 /></div>
-                <div className='font-size-18px'>Include scheduled Move out tenants</div>
+                <div className='font-size-16px'>Include scheduled Move out tenants</div>
 
 
   
@@ -223,10 +212,10 @@ export default class Filterleases extends Component {
     <div className='mt-10px'>
      <SelectTableComponent className="fixTableHead" />
      <div className='p-10 flex justify-center'>
-            <Button className="button button-danger text-white"
+            <Button className="button button-danger mb-25px font-size-13px text-white mr-10px"
                     onClick={this.handleClick}
                     value='Cancel'/>
-                <Link to='/rule'><Button className="button button-save text-white"
+                <Link to='/rule'><Button className="button button-save  font-size-13px text-white pl-35px pr-35px"
                     value='Save'/></Link>
             </div>
      </div>

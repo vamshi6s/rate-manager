@@ -9,11 +9,14 @@
 .fixTableHead thead th {
   /* position: sticky; */
   top: 0;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .fixTableHead th,
 .fixTableHead td {
   padding: 18px;
+  font-size: 12px;
 }
 
 .fixTableHead thead {
@@ -36,18 +39,20 @@
 .commontable thead th {
   /* position: sticky; */
   top: 0;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.commontable th,
+.commontable th {
+  padding: 18px 4px;
+}
+
 .commontable td {
-  padding: 18px;
+  padding: 18px 14px;
+  font-size: 12px;
 }
 
 .commontable thead {
-  border-bottom: 1px solid rgba(50, 50, 93, 0.25);
+  border-bottom: 1px solid rgba(50, 50, 93, 0.1);
   color: #1F86EF;
-}
-
-.commontable tbody tr td {
-  text-align: center;
 }/*# sourceMappingURL=table.css.map */
