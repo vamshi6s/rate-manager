@@ -6,10 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export default class Occupied extends Component {
-    handleClick = (event) => {
-        event.preventDefault();
-        window.location.pathname='/ruledescription';
-    };
+   
   render() {
     return (
         <section>
@@ -18,8 +15,8 @@ export default class Occupied extends Component {
         <img className='block w-30 m-auto' src={logo}/>
         </div>
         <div className='text-align-center'>
-        <Link to={'/'}><Button className="button button-blue text-white"
-                onClick={this.handleClick}
+        <Link to='/ruledescription'><Button className="button button-blue text-white"
+              
                 value=' Add New rule '/></Link>
                 </div>
                 </div>

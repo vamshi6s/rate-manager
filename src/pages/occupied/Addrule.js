@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../../Styles/style.scss';
 import Add from '../../components/Add';
-import Rulename from '../../components/Rulename';
 import Mode from '../../components/Mode';
 import Values from '../../components/Values';
 import Button from '../../components/button/button';
@@ -10,10 +10,7 @@ import '../../components/button/button.scss';
 
 
 export default class Addrule extends Component {
-    handleClick = (event) => {
-        event.preventDefault();
-        window.location.pathname="/filterleases";
-    };
+   
     handleCl = (event) => {
         event.preventDefault();
         alert("button clicked");
@@ -39,9 +36,9 @@ export default class Addrule extends Component {
             <Button className="button button-danger text-white"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="button button-next text-white"
-                    onClick={this.handleClick}
-                    value='Next'/>
+                <Link to='/filterleases'><Button className="button button-next text-white"
+                    
+                    value='Next'/></Link>
             </div>
           
         </div>

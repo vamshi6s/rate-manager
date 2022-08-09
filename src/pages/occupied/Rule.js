@@ -33,10 +33,10 @@ export default class Rule extends Component{
             
                 
                 <div className='row'>
-                     <div className=' text-pri Right ml-30px'>
+                     <div className=' text-pri column1 ml-30px'>
                 
                 </div>
-                <div className='Middle pl-10px '>
+                <div className='column2 pl-10px '>
                     
                 <InputField
                 className='search ml-30px'
@@ -45,7 +45,7 @@ export default class Rule extends Component{
                     placeholder=' Search'
                     onChange={this.handleChange('text')}/>
                     </div>
-                    <div className='Left mr-30px'>
+                    <div className='column3 mr-30px'>
                     <Button className="button button-blue text-white"
                     onClick={this.handleClic}
                     value='Change Rule'/>

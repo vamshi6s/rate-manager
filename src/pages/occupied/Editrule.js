@@ -37,11 +37,11 @@ export default class Editrule extends Component {
             
           
         </div>
-        <div className='flex justify-cont-space-even mt-30px '>
+        <div className='flex  mt-30px '>
             
        
-        <div className='mt-20px ml-40px'><h4>10 Impacting Leases</h4></div>
-        <div className='mr-20px' ><Button className="button button-blue text-white"
+        <div className='mt-20px Right ml-40px'><h4>10 Impacting Leases</h4></div>
+        <div className='Left mr-20px' ><Button className="button button-blue text-white"
   onClick={this.handleClick}
   value='Remove leases'/></div>
    </div>

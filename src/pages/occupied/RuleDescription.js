@@ -5,6 +5,7 @@ import '../../components/button/button.scss'
 import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
 import Button from '../../components/button/button';
+import { Link } from 'react-router-dom';
 
 
 export default class Ruledescription extends Component {
@@ -12,10 +13,6 @@ export default class Ruledescription extends Component {
         text:'',
         message:''
     }
-    handleClick = (event) => {
-        event.preventDefault();
-        window.location.href="/addrule";
-    };
     handleCl = (event) => {
         event.preventDefault();
         alert("button clicked");
@@ -58,9 +55,8 @@ export default class Ruledescription extends Component {
             <Button className="button button-danger font-size-15px text-white mr-2px"
                     onClick={this.handleCl}
                     value='Cancel'/>
-                <Button className="button button-next font-size-15px text-white pl-30px pr-30px "
-                    onClick={this.handleClick}
-                    value='Next'/>
+                <Link to='/addrule'><Button className="button button-next font-size-15px text-white pl-30px pr-30px "
+                    value='Next'/></Link>
             </div>
           
         </div>

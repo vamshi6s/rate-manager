@@ -1,7 +1,6 @@
 import {React,Component} from 'react';
 
 // import Filterlease from '../components/Filterlease';
-import Dropdown from '../../components/dropdown/dropdown';
 import Button from '../../components/button/button';
 import InputField from '../../components/inputfield/inputField';
 import { Validators } from '../../Utils/Validator';
@@ -10,6 +9,8 @@ import '../../Styles/sty.scss';
 import Checkbox from '../../components/checkbox/Checkbox';
 import SelectTableComponent from '../../components/tables/TableData';
 import filterimg from '../../images/filterr.png';
+import { Multiselect } from "multiselect-react-dropdown";
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,12 +18,48 @@ import filterimg from '../../images/filterr.png';
 export default class Filterleases extends Component {
     state={
         
-        StorageType:'',
-        location:'',
-        building:'',
-        unittype:'',
-        filter:'',
-        amenity:'',
+      StorageType: [
+        { key: "Option 1", cat: "Group 1" },
+        { key: "Option 2", cat: "Group 1" },
+        { key: "Option 3", cat: "Group 1" },
+        { key: "Option 4", cat: "Group 2" },
+        { key: "Option 5", cat: "Group 2" },
+      ],
+        location:[
+          { key: "Option 1", cat: "Group 1" },
+          { key: "Option 2", cat: "Group 1" },
+          { key: "Option 3", cat: "Group 1" },
+          { key: "Option 4", cat: "Group 2" },
+          { key: "Option 5", cat: "Group 2" },
+        ],
+        building:[
+          { key: "Option 1", cat: "Group 1" },
+          { key: "Option 2", cat: "Group 1" },
+          { key: "Option 3", cat: "Group 1" },
+          { key: "Option 4", cat: "Group 2" },
+          { key: "Option 5", cat: "Group 2" },
+        ],
+        unittype:[
+          { key: "Option 1", cat: "Group 1" },
+          { key: "Option 2", cat: "Group 1" },
+          { key: "Option 3", cat: "Group 1" },
+          { key: "Option 4", cat: "Group 2" },
+          { key: "Option 5", cat: "Group 2" },
+        ],
+        filter:[
+          { key: "Option 1", cat: "Group 1" },
+          { key: "Option 2", cat: "Group 1" },
+          { key: "Option 3", cat: "Group 1" },
+          { key: "Option 4", cat: "Group 2" },
+          { key: "Option 5", cat: "Group 2" },
+        ],
+        amenity:[
+          { key: "Option 1", cat: "Group 1" },
+          { key: "Option 2", cat: "Group 1" },
+          { key: "Option 3", cat: "Group 1" },
+          { key: "Option 4", cat: "Group 2" },
+          { key: "Option 5", cat: "Group 2" },
+        ],
         date:'',
         acceptance: false,
 
@@ -36,12 +73,6 @@ export default class Filterleases extends Component {
         this.setState({[key]: value});
     };
     
-    
-   
-    handleClic = (event) => {
-        event.preventDefault();
-        window.location.pathname="/rule"
-    };
     handleClick = (event) => {
       event.preventDefault();
       alert('Button Clicked');
@@ -65,97 +96,61 @@ export default class Filterleases extends Component {
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Storage Type</p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      className="dropdown font-size-12px w-full p-6px"
-      styleClass='mt-3'
-      value={StorageType}
-      placeholder='Select Storage Type'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={StorageType}
+  singleSelect
+  displayValue="key"
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
   <div className="col-2 mt-15px ">
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Location</p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      className="dropdown w-full font-size-12px p-6px"
-      styleClass='mt-3'
-      value={location}
-      placeholder='Select location'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={location}
+  singleSelect
+  displayValue="key"
+  placeholder='Select location'
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
   <div className="col-2  mt-15px">
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Building </p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      className="dropdown w-full font-size-12px p-6px"
-      styleClass='mt-3'
-      value={building}
-      placeholder='Select building'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={building}
+  singleSelect
+  displayValue="key"
+  placeholder='Select location'
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
   <div className="col-2 mt-15px">
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">unit Type</p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      className="dropdown w-full font-size-12px p-6px"
-      styleClass='mt-3'
-      value={unittype}
-      placeholder='Select unittype'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={unittype}
+  singleSelect
+  displayValue="key"
+  placeholder='Select location'
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
   <div className="col-2 mt-15px mr-15px ">
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Amenity</p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      className="dropdown w-full font-size-12px p-6px"
-      styleClass='mt-3'
-      value={amenity}
-      placeholder='Select Amenity'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={amenity}
+  singleSelect
+  displayValue="key"
+  placeholder='Select location'
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
   <div className='row flex-wrap justify-space-evenly'>
   <div className='col-2 mt-20px mb-20px ml-15px '>
   <header className="App-header mb-10px">
@@ -167,21 +162,14 @@ export default class Filterleases extends Component {
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Filter</p>
           </header>
-            <Dropdown
-      data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
-      ]}
-      
-      className="dropdown w-full font-size-12px p-6px"
-      value={filter}
-      placeholder='Select filter'
-      onChange={this.handleDropdown}
-  /></div>
+          <Multiselect
+  options={filter}
+  singleSelect
+  displayValue="key"
+  placeholder='Select location'
+  styleClass={this.styleClass}
+  onChange={this.handleDropdown}
+/></div>
 
   
   <div className='col-2 mt-20px mb-20px '>
@@ -238,9 +226,8 @@ export default class Filterleases extends Component {
             <Button className="button button-danger text-white"
                     onClick={this.handleClick}
                     value='Cancel'/>
-                <Button className="button button-save text-white"
-                    onClick={this.handleClic}
-                    value='Save'/>
+                <Link to='/rule'><Button className="button button-save text-white"
+                    value='Save'/></Link>
             </div>
      </div>
             </div>

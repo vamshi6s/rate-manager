@@ -6,6 +6,7 @@ import Data from '../../components/tables/Data';
 import InputField from '../../components/inputfield/inputField';
 import '../../components/inputfield/inputfield.scss';
 import '../../Styles/style.scss';
+import {Link} from 'react-router-dom';
 
 
 
@@ -25,14 +26,6 @@ export default class Yourrule extends Component {
         event.preventDefault();
         alert('Button Clicked');
     };
-    handleClic = (event) => {
-        event.preventDefault();
-        window.location.href="/unmapped";
-    };
-    handleCli = (event) => {
-        event.preventDefault();
-        window.location.href="/edit";
-    };
     
 
     render(){ 
@@ -46,10 +39,10 @@ export default class Yourrule extends Component {
             </div>
                 
                 <div className='row'>
-                     <div className='text-pri Right ml-30px'>
+                     <div className='text-pri column1 ml-30px'>
                      <h4>Your Rule</h4>
                 </div>
-                <div className='Middle pl-20px '>
+                <div className='column2 pl-20px '>
                 <InputField
                  className='search ml-30px'
                     value={text}
@@ -57,13 +50,13 @@ export default class Yourrule extends Component {
                     placeholder='Search'
                     onChange={this.handleChange('text')}/>
                     </div>
-                    <div className='Left mr-30px'>
-                    <Button className="button button-next text-white"
+                    <div className='column3 mr-30px'>
+                    <Link to='/edit'><Button className="button button-next text-white"
                     onClick={this.handleCli}
-                    value='Add New Rule'/>
-                    <Button className="button button-next text-white"
+                    value='Add New Rule'/></Link>
+                    <Link to='/unmapped'><Button className="button button-next text-white"
                     onClick={this.handleClic}
-                    value='View Unmapped Leases'/>
+                    value='View Unmapped Leases'/></Link>
                     </div>
   </div>
   
