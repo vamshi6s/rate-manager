@@ -34,23 +34,19 @@ export default class Values extends Component {
                 <td>
                 <Dropdown
       data={[
-          {value: 1, label: 'India'},
-          {value: 2, label: 'USA'},
-          {value: 3, label: 'UK'},
-          {value: 4, label: 'Germany'},
-          {value: 5, label: 'Russia'},
-          {value: 5, label: 'Italy'},
+          {value: 1, label: 'Increase'},
+          {value: 2, label: 'Decrease'},
       ]}
-      className="dropdown font-size-12px  p-6px"
+      className="dropdown  font-size-12px mr-5px pr-20px pl-20px p-6px"
       styleClass='mt-3'
       value={country}
-      placeholder='Select Country'
+      placeholder='Select'
       onChange={this.handleDropdown}
   />
                 </td>
-                <td><p className="ml-6px font-size-13px mr-6px">Rental price by</p></td>
+                <td><p className="ml-6px font-size-13px mr-5px">Rental price by</p></td>
                 <td>
-                    <div className="ml-6px">
+                    <div className="w-50 ml-6px mr-5px">
                 <InputField
                     value={text}
                     type='text'
@@ -64,26 +60,26 @@ export default class Values extends Component {
                 
                 </td>
                 <td>
-                    <p className="ml-6px font-size-13px ml-6px">When price has not changed in</p>
+                    <p className="ml-6px font-size-13px mr-5px ml-6px">When price has not changed in</p>
                 </td>
                 <td>
-                <div class="flex ml-10px">
+                <div class="flex  ml-10px">
                 <InputField
                     value={text}
                     type='text'
-                    className="inpt h-22px"
+                    className="inpt w-40 h-22px"
                     
                     validators={[
                         {check: Validators.required, message: 'This field is required'}
                     ]}
                     onChange={this.handleChange('text')}/>
         <div class="input-group-append">
-          <span class="input-group-text h-30px font-size-13px" id="basic-addon2">Days</span>
+          <span class="input-group-text h-30px pl-15px pr-15px font-size-13px" id="basic-addon2">Days</span>
         </div>
       </div>
                 </td>
                 <td>
-                    <a className="text-danger font-size-18px pl-25px pr-10px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
+                    <a className="text-danger font-size-18px pl-25px pr-7px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
                     <td>
                     <a className="text-pri font-size-18px pl-8px pr-10px" href="https://github.com/" onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
                 </td>

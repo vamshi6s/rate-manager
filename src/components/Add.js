@@ -11,14 +11,14 @@ const Add = () => {
 return (
 <div className='row'>
 							<div className='d-inline-block ml-10 h-60px'>
-                            <span className='pr-20px side-font'>Add rule</span>
+                            <span className='pr-20px side-font font-size-16'>Add rule</span>
 								<button {...buttonProps} type='button' className='dropdown font-size-12px w-10 p-6px'>
 									<span className='pr-15px'>New Rule</span>
-									<FontAwesomeIcon icon={faAngleDown} />
+									<FontAwesomeIcon className='font-size-14' icon={faAngleDown} />
 								</button>
 
-								<div className={`dropdown-menu ${isOpen ? 'visible' : ''}`} role='menu'>
-									<a
+								<div className= {`dropdown-menu ${isOpen ? 'visible' : ''}`} role='menu'>
+									<a 
 										{...itemProps[0]}
 									
 										id='menu-item-1'
@@ -37,7 +37,7 @@ return (
 									</a>
 
 									<a {...itemProps[2]} href="/Addrule" onClick={() => alert('Click!')} id='menu-item-3'>
-                                    <img className="w-15px mt-5px" src={plus}/>  
+                                    <img className="w-13px mt-5px" src={plus}/>  
 										Add Rule
 									</a>
 								</div>

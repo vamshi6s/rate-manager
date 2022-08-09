@@ -1,46 +1,119 @@
 import React from "react";
 import '../../Styles/style.scss';
-
+import User from '../../images/User.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera} from '@fortawesome/free-solid-svg-icons';
 const Users = [
   {
     id: 1,
     selected: false,
-    name: "Leanne Graham",
-    email: "Sincere@april.biz",
-    phone: "1-770-736-8031 x56442",
-    website: "hildegard.org",
+    tenantdetails:{
+      tenantId:'TEN0001',
+      tenantname:'John Admin',
+      tenantemail:'John@6storage.com',
+      tenantnumber:'+123445567870'
+    },
+    storagedetails: {
+      unitnumber:'Unit 1(small 5*5)mt',
+      location:'location 1',
+      building:'building 1'
+    },
+    
+    leasedetails:{
+      MoveIn:'30/06/2022',
+      invoiceperiod:'Monthly',
+      scheduledmoveout:'30/07/2022',
+      lastpriceupdateon:'N/A'
+    } ,
+    RentalPrice: " $100",
   },
   {
     id: 2,
     selected: false,
-    name: "Ervin Howell",
-    email: "Shanna@melissa.tv",
-    phone: "010-692-6593 x09125",
-    website: "anastasia.net",
+    tenantdetails: {
+      tenantId:'TEN0001',
+      tenantname:'John Admin',
+      tenantemail:'John@6storage.com',
+      tenantnumber:'+123445567870'
+    },
+    storagedetails: {
+      unitnumber:'Unit 1(small 5*5)mt',
+      location:'location 1',
+      building:'building 1'
+    },
+    leasedetails:{
+      MoveIn:'30/06/2022',
+      invoiceperiod:'Monthly',
+      scheduledmoveout:'30/07/2022',
+      lastpriceupdateon:'N/A'
+    } ,
+    RentalPrice: " $100",
   },
   {
     id: 3,
     selected: false,
-    name: "Clementine Bauch",
-    email: "Nathan@yesenia.net",
-    phone: "1-463-123-4447",
-    website: "ramiro.info",
+    tenantdetails: {
+      tenantId:'TEN0001',
+      tenantname:'John Admin',
+      tenantemail:'John@6storage.com',
+      tenantnumber:'+123445567870'
+    },
+    storagedetails: {
+      unitnumber:'Unit 1(small 5*5)mt',
+      location:'location 1',
+      building:'building 1'
+    },
+    leasedetails:{
+      MoveIn:'30/06/2022',
+      invoiceperiod:'Monthly',
+      scheduledmoveout:'30/07/2022',
+      lastpriceupdateon:'N/A'
+    } ,
+    RentalPrice: " $100",
   },
   {
     id: 4,
     selected: true,
-    name: "Patricia Lebsack",
-    email: "Julianne.OConner@kory.org",
-    phone: "493-170-9623 x156",
-    website: "kale.biz",
+    tenantdetails: {
+      tenantId:'TEN0001',
+      tenantname:'John Admin',
+      tenantemail:'John@6storage.com',
+      tenantnumber:'+123445567870'
+    },
+    storagedetails: {
+      unitnumber:'Unit 1(small 5*5)mt',
+      location:'location 1',
+      building:'building 1'
+    },
+    leasedetails:{
+      MoveIn:'30/06/2022',
+      invoiceperiod:'Monthly',
+      scheduledmoveout:'30/07/2022',
+      lastpriceupdateon:'N/A'
+    } ,
+    RentalPrice: " $100",
   },
   {
     id: 5,
     selected: false,
-    name: "Chelsey Dietrich",
-    email: "Lucio_Hettinger@annie.ca",
-    phone: "(254)954-1289",
-    website: "demarco.info",
+    tenantdetails: {
+      tenantId:'TEN0001',
+      tenantname:'John Admin',
+      tenantemail:'John@6storage.com',
+      tenantnumber:'+123445567870'
+    },
+    storagedetails: {
+      unitnumber:'Unit 1(small 5*5)mt',
+      location:'location 1',
+      building:'building 1'
+    },
+    leasedetails:{
+      MoveIn:'30/06/2022',
+      invoiceperiod:'Monthly',
+      scheduledmoveout:'30/07/2022',
+      lastpriceupdateon:'N/A'
+    } ,
+    RentalPrice: " $100",
   },
 ];
 
@@ -131,10 +204,10 @@ class SelectTableComponent extends React.Component {
                         onChange={(e) => this.onItemCheck(e, user)}
                       />
                     </th>
-                    <td>{user.name}</td>
-                    <td>{user.email}</td>
-                    <td>{user.phone}</td>
-                    <td>{user.website}</td>
+                    <td><div className='flex ml-15px'><div  ><img src={User}/></div><div className='ml-5px text-left'><span>{user.tenantdetails.tenantId}</span>  <span>{user.tenantdetails.tenantname}</span><br/><span>{user.tenantdetails.tenantemail}</span><br/><span>{user.tenantdetails.tenantnumber}</span></div></div></td>
+                    <td><div className='flex ml-15px'><div className='ml-5px text-left'><span>{user.storagedetails.unitnumber}</span><br/>  <span>{user.storagedetails.location}</span> |<span>{user.storagedetails.building}</span><br/><span  ><FontAwesomeIcon className="text-blue font-size-12px  mr-5px" icon={faCamera} /><FontAwesomeIcon className="text-blue font-size-12px  mr-5px" icon={faCamera} /><FontAwesomeIcon className="text-blue font-size-12px mr-5px" icon={faCamera} /></span></div></div></td>
+                    <td>{<div className='flex ml-5rem'><div className='ml-5px text-left'><span><span>Move in:</span>{user.leasedetails.MoveIn}</span><br/>  <span><span>Invoice Period:</span>{user.leasedetails.invoiceperiod}</span><br/><span><span>Scheduled Move Out:</span>{user.leasedetails.scheduledmoveout}</span><br/><span><span>Last Price Update on:</span>{user.leasedetails.lastpriceupdateon}</span></div></div>}</td>
+                    <td>{user.RentalPrice}</td>
                   </tr>
                 ))}
               </tbody>

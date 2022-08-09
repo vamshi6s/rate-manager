@@ -17,4 +17,31 @@
 
 .column {
   width: 18%;
+}
+
+.multiSelectContainer li {
+  padding: 5px !important;
+  font-size: 13px !important;
+}
+
+.searchWrapper {
+  padding: 3px;
+}
+
+.chip {
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding: 2px 5px;
+}
+
+.searchBox::-moz-placeholder {
+  font-size: 12px;
+}
+
+.searchBox:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.searchBox::placeholder {
+  font-size: 12px;
 }/*# sourceMappingURL=dropdown.css.map */

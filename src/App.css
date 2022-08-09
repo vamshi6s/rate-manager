@@ -49,12 +49,12 @@
   align-items: center;
 }
 .column2{
-flex: 43%;
+flex: 21%;
 display: flex;
   align-items: center;
 }
 .column3{
-flex: 32%;
+flex: 21%;
 display: flex;
   align-items: center;
   justify-content: end;
@@ -339,7 +339,7 @@ mb{
 	background: #fff;
 	/* margin: auto; */
 	margin-top: 0.3rem;
-  margin-left: 4.5rem;
+  margin-left: 5.2rem;
 	padding: 0.8rem;
 	border: 1px solid #ddd;
 	border-radius: 0.25rem;
@@ -367,9 +367,10 @@ mb{
 
 .dropdown-menu a {
 	display: block;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	padding: 0.1rem;
   text-align: center;
+  border-bottom: 1px solid   rgba(218, 224, 230, 0.2);
 }
 
 .dropdown-menu a {
@@ -377,12 +378,13 @@ mb{
 	text-decoration: none;
 	cursor: pointer;
 	outline: none;
+  text-decoration: none;
 	border: 0.1rem solid transparent;
 	border-radius: 0.2rem;
 }
 
 .dropdown-menu a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* Fallback for browsers that do not support :focus-visible. */

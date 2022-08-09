@@ -18,11 +18,18 @@
     width: 400px;
     height: 30px;
     padding: 0px 10px;
-    border: 1px solid #ced4da;
+    border: none;
+    // border: 1px solid #ced4da;
     border-radius: 5px;
 }
 .search:focus{
     outline: none;
+}
+.search-icon{
+  background: #fff;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius:10px;
 }
 
 
@@ -66,7 +73,7 @@
     margin-bottom: 0;
   }
   .input-group-append {
-    margin-left: -5px;
+    margin-left: -6.5rem;
   }
   .input-group-text {
     display: -webkit-box;
