@@ -1,9 +1,9 @@
 /*button*/
 .button {
-  padding: 5px 23px;
+  padding: 4px 27px;
   border-radius: 5px;
   cursor: pointer;
-  height: 30px;
+  height: 40px;
   margin: 10px;
 }
 

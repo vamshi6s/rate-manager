@@ -15,7 +15,7 @@ export default class Occupied extends Component {
         <img className='block w-30 m-auto' src={logo}/>
         </div>
         <div className='text-align-center'>
-        <Link to='/ruledescription'><Button className="button button-blue text-white"
+        <Link to='/ruledescription'><Button className="button font-size-14 button-blue text-white"
               
                 value=' Add New rule '/></Link>
                 </div>

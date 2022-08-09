@@ -25,9 +25,9 @@ export default class Ruledescription extends Component {
     return (
              <section className='mt-50px'>
         <div className='Container box '>
-            <h4 className='h4  font-title font-size-20px pt-15px pb-15px pl-25px text-blue '>Add Rule</h4>
+            <h4 className='h4  font-title font-size-18 pt-15px pb-15px pl-25px text-blue '>Add Rule</h4>
             <div className=' pt-20px pb-1px pl-25px'>
-                <h4 className='font-size-18px'>RuleName</h4>
+                <h4 className='font-size-16'>RuleName</h4>
             </div>
             <div className=' pt-10px pb-1px pl-25px'>
             <InputField 
@@ -38,7 +38,7 @@ export default class Ruledescription extends Component {
                     onChange={this.handleChange('text')}/>
             </div>
             <div className='pt-20px pb-1px pl-25px'>
-                <h4 className='font-size-18px'>Rule Description</h4>
+                <h4 className='font-size-16'>Rule Description</h4>
             </div>
             <div className='pt-10px pb-1px pl-25px'>
             <InputField

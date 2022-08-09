@@ -23,7 +23,7 @@ export default class Reports extends Component {
         { key: "Option 2", cat: "Group 1" },
         { key: "Option 3", cat: "Group 1" },
         { key: "Option 4", cat: "Group 2" },
-        { key: "Option 5", cat: "Group 2" },
+        { key: "Option 5", cat: "Group 2",customIcon:'fabars' },
       ],
         location:'',
         building:'',
@@ -32,6 +32,9 @@ export default class Reports extends Component {
         amenity:'',
         date:'',
         acceptance: false,   
+    }
+     style ={
+
     }
 
     
@@ -75,9 +78,10 @@ export default class Reports extends Component {
   options={objectArray}
   singleSelect
   displayValue="key"
-  styleClass={this.styleClass}
+  styleClass={this.style}
   onChange={this.handleDropdown}
-/></div>
+>
+<Multiselect.customIcon>Fabars</Multiselect.customIcon></Multiselect></div>
   <div className="col-2 mt-15px ">
           <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Location</p>
