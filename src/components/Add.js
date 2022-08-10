@@ -11,7 +11,7 @@ const Add = () => {
 return (
 <div className='row'>
 							<div className='d-inline-block ml-10 h-60px'>
-                            <span className='pr-20px side-font font-size-16'>Add rule</span>
+                            <span className='pr-25px side-font font-size-16'>Add rule</span>
 								<button {...buttonProps} type='button' className='dropdown font-size-12px w-10 p-6px'>
 									<span className='pr-15px'>New Rule</span>
 									<FontAwesomeIcon className='font-size-14' icon={faAngleDown} />

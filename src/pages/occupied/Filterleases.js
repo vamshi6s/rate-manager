@@ -10,6 +10,7 @@ import Checkbox from '../../components/checkbox/Checkbox';
 import SelectTableComponent from '../../components/tables/TableData';
 import filterimg from '../../images/filterr.png';
 import { Multiselect } from "multiselect-react-dropdown";
+
 import { Link } from 'react-router-dom';
 
 
@@ -140,7 +141,7 @@ export default class Filterleases extends Component {
   styleClass={this.styleClass}
   onChange={this.handleDropdown}
 /></div>
-  <div className='row flex-wrap justify-space-evenly'>
+  <div className='row flex-wrap pl-25px justify-space-evenly'>
   <div className='col-2 mt-20px mb-20px ml-15px '>
   <header className="App-header mb-10px">
             <p className="App-title font-size-14px">Rental Price</p>

@@ -36,29 +36,21 @@ export default class Unmappedfilter extends Component {
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         unittype:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
-          { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
+          { key: "Option 3", cat: "Group 1" }
         ],
         filter:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         amenity:[
           { key: "Option 1", cat: "Group 1" },
           { key: "Option 2", cat: "Group 1" },
           { key: "Option 3", cat: "Group 1" },
-          { key: "Option 4", cat: "Group 2" },
-          { key: "Option 5", cat: "Group 2" },
         ],
         date:'',
         acceptance: false,
@@ -238,13 +230,13 @@ export default class Unmappedfilter extends Component {
 onClick={this.onClickButton}
   value='Update last price change'/>
   <Modal open={this.state.openModal} onClose={this.onCloseModal}>
-    <div className="title">
+    <div className="Modal-title">
       <h4>Are You Sure You Want to Continue?</h4>
       </div>
-      <div className="body">
+      <div className="Modal-body">
         <p>The next page looks amazing. Hope you want to go there!</p>
         </div>
-        <div className="footer">
+        <div className="Modal-footer">
         <Button className="button button-danger text-white"
   onClick={this.handleClick}
   value='No'/>

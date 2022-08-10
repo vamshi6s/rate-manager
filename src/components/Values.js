@@ -4,16 +4,28 @@ import { Validators } from "../Utils/Validator";
 import InputField from "./inputfield/inputField";
 import  cancel from '../images/cancel.svg';
 import Add from '../images/Add.svg';
+import Button from '../components/button/button.js'
 import '../Styles/style.scss';
 import '../components/button/button.scss';
 import '../components/dropdown/dropdown.scss';
+import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
 
 
 export default class Values extends Component {
     state={
         country:'',
-        text:''
+        text:'',
+        openModal:false
     };
+    onClickButton = e =>{
+        e.preventDefault()
+        this.setState({openModal : true})
+    }
+  
+    onCloseModal = ()=>{
+        this.setState({openModal : false})
+    }
     handleDropdown = (country) => {
         this.setState({country});
     };
@@ -79,9 +91,28 @@ export default class Values extends Component {
       </div>
                 </td>
                 <td>
-                    <a className="text-danger font-size-18px pl-25px pr-7px " href="https://github.com/" onClick={this.handleClick}><img className="w-15px mt-5px" src={cancel}/></a></td>
+                    <a className="text-danger font-size-18px pl-25px pr-7px " href="https://github.com/" onClick={this.onClickButton}><img className="w-15px mt-5px" src={cancel}/></a></td>
                     <td>
-                    <a className="text-pri font-size-18px pl-8px pr-10px" href="https://github.com/" onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
+                    <a className="text-pri font-size-18px pl-8px pr-10px" href="https://github.com/"onClick={this.handleClick}><img className="w-20px mt-5px" src={Add}/></a>
+                    <Modal open={this.state.openModal} onClose={this.onCloseModal}>
+    <div className="Modal-title">
+      <h4>Deleting Sub Rule</h4>
+      </div>
+      <div className="Modal-body flex"> 
+      <div><img/></div>
+      <div>
+        <h5>Deleting sub rules from rule 1</h5>
+        <p className="font-size-12px">Are you sure want to delete the sub rule ?</p></div>
+        </div>
+        <div className="Modal-footer">
+        <Button className="button button-danger text-white"
+  onClick={this.handleClick}
+  value='No'/>
+
+<Button className="button button-next text-white"
+  onClick={this.handleClick}
+  value='Yes'/></div>
+                    </Modal>
                 </td>
             </tr>
         </tbody>

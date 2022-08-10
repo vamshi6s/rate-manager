@@ -123,8 +123,8 @@ mb{
   display: block;
   margin:auto;
 }
-.h4{
-    border-bottom: 1px solid lightgrey;
+.title{
+    border-bottom: 1px solid #f5f2f2;
     padding-bottom: 5px;
 }
 

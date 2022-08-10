@@ -3562,6 +3562,7 @@
 
 .border-box {
   border: 1px solid rgba(218, 224, 230, 0.2);
+  height: 140px;
 }
 
 .border-dashed {

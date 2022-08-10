@@ -25,7 +25,7 @@ export default class Ruledescription extends Component {
     return (
              <section className='mt-50px'>
         <div className='Container box '>
-            <h4 className='h4  font-title font-size-18 pt-15px pb-15px pl-25px text-blue '>Add Rule</h4>
+            <h4 className='title  font-title font-size-18 p-20px pl-25px text-blue '>Add Rule</h4>
             <div className=' pt-20px pb-1px pl-25px'>
                 <h4 className='font-size-16'>RuleName</h4>
             </div>
@@ -45,7 +45,7 @@ export default class Ruledescription extends Component {
             className='text-area'
                     value={message}
                     type='textarea'
-                    placeholder='Enter description..'
+                    
                     validators={[
                         {check: Validators.required, message: 'This field is required'}
                     ]}
